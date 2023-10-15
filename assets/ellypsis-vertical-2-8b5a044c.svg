@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 24" width="6" height="24">
+	<title>ellypsis-vertical-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m2 12c0-0.6 0.4-1 1-1 0.6 0 1 0.4 1 1 0 0.6-0.4 1-1 1-0.6 0-1-0.4-1-1zm0-6c0-0.6 0.4-1 1-1 0.6 0 1 0.4 1 1 0 0.6-0.4 1-1 1-0.6 0-1-0.4-1-1zm0 12c0-0.6 0.4-1 1-1 0.6 0 1 0.4 1 1 0 0.6-0.4 1-1 1-0.6 0-1-0.4-1-1z"/>
+</svg>

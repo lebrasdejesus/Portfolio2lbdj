@@ -1,0 +1,25 @@
+@import './base.css';
+
+#app {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  /* color: #219db2; */
+  color: #397A89;
+  /* transition: 0.4s; */
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  a:hover {
+    cursor: pointer;
+  }
+
+}

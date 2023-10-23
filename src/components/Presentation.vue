@@ -44,64 +44,28 @@ const cvURL =
                 alternance en tant qu'intégratrice et/ou developpeuse
                 front-end</b
               >
-              sur la métropole Lilloise. N'hésitez pas à me
+              sur la métropole Lilloise. <br /><br />N'hésitez pas à me
               <a href="#contact" class="link-text"><b>contacter</b></a>
               si vous pensez que mon profil peut vous intéresser.
             </p>
-            <!-- <button class="btn">
-              <a :href="cvURL" download="fchambinaud.pdf" target="_blank"
-                >Plus de détails sur mon cv</a
-              >
-            </button> -->
+            <div class="container-button">
+              <!-- <button>
+                <a
+                  href="https://raw.githubusercontent.com/lebrasdejesus/Portfolio/10155ac4d053bbb40de05423900a778f1c3b5b13/src/assets/CV-FCHAMBINAUD.pdf"
+                  target="_blank"
+                  >Télécharger mon cv</a
+                >
+              </button> -->
+
+              <button class="btn">
+                <a :href="cvURL" target="_blank" download="fchambinaud.pdf"
+                  >Plus de détails sur mon cv</a
+                >
+              </button>
+            </div>
           </div>
         </div>
       </PresentationItem>
-      <div class="container-button">
-        <!-- <button>
-          <a
-            href="https://raw.githubusercontent.com/lebrasdejesus/Portfolio/10155ac4d053bbb40de05423900a778f1c3b5b13/src/assets/CV-FCHAMBINAUD.pdf"
-            target="_blank"
-            >Télécharger mon cv</a
-          >
-        </button> -->
-
-        <button class="btn">
-          <!-- <a href="/cvfchambinaud-public.pdf" target="_blank"
-            >Ouvrir mon cv depuis public</a
-          > -->
-          <!-- <a href="../../public/cvfchambinaud-public.pdf " target="_blank"
-            >Ouvrir mon cv depuis public</a
-          > -->
-          <!-- <a
-            href="https://file.notion.so/f/f/3b039082-0e23-4e19-afe1-fa9e5d154c14/4ebe4a50-b97e-417d-966d-9d8e0257121d/CV-F-Chambinaud-Inte-Dev.pdf?id=13ac6315-f309-464d-95c1-350c2b554961&table=block&spaceId=3b039082-0e23-4e19-afe1-fa9e5d154c14&expirationTimestamp=1697479200000&signature=8s2k80MYIcLPK2l6WErmVMnb74ENBhVv-3u_EwnFzVw&downloadName=CV-F-Chambinaud-Inte-Dev.pdf"
-            target="_blank"
-            >Plus de détails sur mon cv++</a
-          > -->
-          <a :href="cvURL" target="_blank" download="fchambinaud.pdf"
-            >Plus de détails sur mon cv</a
-          >
-        </button>
-        <!-- <button class="btn">Bouton 2</button> -->
-        <!-- <button>
-          <a href="src/assets/cvfchambinaud.pdf" target="_blank"
-            >Voir un autre cv</a
-          >
-        </button>
-        <button>
-          <a href="src/assets/Suzuki-NB.jpg" target="_blank">Voir un jpg</a>
-        </button>
-        <button>
-          <a href="../assets/Suzuki-NB.jpg" download>DL un jpg</a>
-        </button>
-        <button>
-          <a href="../assets/cvfchambinaud.pdf" download>DL mon cv++</a>
-        </button>
-        <button>
-          <a href="../assets/cvfchambinaud.pdf" target="_blank"
-            >afficher mon cv++</a
-          >
-        </button> -->
-      </div>
 
       <div class="super-container-hardSkills">
         <div class="container-hardSkills-titre">
@@ -247,12 +211,17 @@ const cvURL =
 </template>
 <style scoped>
 .espace-nav {
-  /* margin-top: 11.5rem; */
   min-height: 100vh;
+
+  padding-top: 3rem;
+  /* background-color: #397a89; */
+  background-color: #f5fdfd;
+}
+#head {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  flex-direction: column;
 }
 .super-container-hardSkills {
   display: flex;
@@ -301,24 +270,9 @@ const cvURL =
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
 }
-/* button {
-  padding: 0.7rem 1.1rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  border: none;
-  box-shadow: inset 0px 0px 10px 3px #26a8bf;
-  background: linear-gradient(to bottom, #5bb6c6 5%, #1897a8 100%);
-  background-color: #5bb6c6;
-  text-shadow: 0px 1px 1px #337985;
-  color: white;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-} */
 
-/* test bouton debut */
 button,
 button::after {
   -webkit-transition: all 0.3s;
@@ -334,20 +288,18 @@ button {
   font-size: 1.1rem;
   /* border: 2px #219db2 solid; */
   border: 2px #397a89 solid;
-  /* box-shadow: inset 0px 0px 10px 3px #26a8bf; */
-  /* background: linear-gradient(to bottom, #5bb6c6 5%, #1897a8 100%); */
   background: none;
-  /* text-shadow: 0px 1px 1px #337985; */
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   position: relative;
   /* color: #219db2; */
   color: #397a89;
   overflow: hidden;
+  z-index: 1;
 }
 button::before,
 button::after {
-  border: #fff 2px solid;
+  /* border: #fff 2px solid; */
   border-radius: 2rem;
   /* background-color: #219db2; */
   background-color: #116071;
@@ -356,9 +308,6 @@ button::after {
   z-index: -1;
   /* border: 4px #ffffff solid; */
 }
-/* button:hover {
-  color: #fff;
-} */
 button:hover a {
   color: #fff;
 }
@@ -376,37 +325,25 @@ button:hover a {
 }
 .btn:hover::after {
   width: 100%;
+  border: #fff 2px solid;
 }
-
-/* test bouton fin */
-
-/* button:hover::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  top: -1px;
-  border: 2px #337985 solid;
-  border-radius: 2rem;
-  z-index: 1;
-} */
-/* button:active {
-  position: relative;
-  top: 1px;
-} */
 p {
   font-size: 0.9rem;
   text-align: justify;
-}
-
-#head:target {
-  padding-top: 7rem;
-  margin-top: -7rem;
 }
 .photo-et-texte {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 3rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  /* border: #116071 2px solid; */
+  box-shadow: inset 0.6rem 0.6rem #397a89,
+    0.3rem 0.3rem 0.5rem rgba(57, 122, 137, 0.2);
 }
 .photo {
   border-radius: 10rem;
@@ -417,6 +354,7 @@ p {
   width: 7rem;
   border-radius: 10rem;
   border: 2px #116071 solid;
+  /* border: 2px #d35400 solid; */
 }
 .height100 {
   height: 100%;
@@ -434,9 +372,6 @@ li {
   padding: 0.2rem;
   list-style-type: none;
 }
-#head {
-  width: 100%;
-}
 .link-text {
   font-weight: 600;
   font-size: 1rem;
@@ -449,31 +384,37 @@ li {
   color: #fff;
   box-shadow: inset 200px 0 0 0 #116071;
 }
+#head {
+  width: 100%;
+}
+#head:target {
+  padding-top: 6.1rem;
+  margin-top: -6.1rem;
+}
 @media (min-width: 471px) {
-  .espace-nav {
-    padding-top: 5.5rem;
-  }
   #head:target {
-    padding-top: 7rem;
-    margin-top: -7rem;
+    padding-top: 9rem;
+    margin-top: -9rem;
   }
 }
 @media (min-width: 768px) {
   #head:target {
-    padding-top: 5.5rem;
-    margin-top: -5.5rem;
+    padding-top: 8.4rem;
+    margin-top: -8.4rem;
   }
   .photo-et-texte {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: start;
-    /* width: 40rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
   }
+
   .photo {
     width: 8.5rem;
     height: 8.5rem;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
+    margin-bottom: 1rem;
   }
   .photo img {
     width: 8.5rem;
@@ -509,26 +450,37 @@ li {
   }
 }
 @media (min-width: 1135px) {
-  .espace-nav {
-    padding-top: 4rem;
-  }
   #head:target {
-    padding-top: 4rem;
-    margin-top: -4rem;
+    padding-top: 6.8rem;
+    margin-top: -6.8rem;
   }
-  .photo-et-texte {
+  #head {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    padding-top: 3rem;
+  }
+  /* .photo-et-texte {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: start;
-  }
+  } */
   .photo {
     width: 12rem;
     height: 12rem;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
   }
   .photo img {
     width: 12rem;
+  }
+  .super-container-hardSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
   }
   .container-hardSkills-titre {
     display: flex;
@@ -536,6 +488,12 @@ li {
     flex-wrap: wrap;
     justify-content: left;
     margin: 2rem;
+  }
+  .two-containers-hard-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
   }
   .container-hardSkills {
     display: flex;

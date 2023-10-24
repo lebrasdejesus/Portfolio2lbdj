@@ -2,6 +2,7 @@
 // import Header4 from "../components/Header4.vue";
 import Header5 from "../components/Header5.vue";
 import First2 from "../components/First2.vue";
+// import testLocomotive from "../components/testLocomotive.vue";
 import Presentation2 from "../components/Presentation2.vue";
 import Projects from "../components/Projects.vue";
 import Contact from "../components/Contact.vue";
@@ -12,6 +13,7 @@ import Footer from "../components/Footer.vue";
   <main>
     <Header5 />
     <First2 />
+    <!-- <testLocomotive /> -->
     <Presentation2 />
     <Projects />
     <Contact />
@@ -22,7 +24,7 @@ import Footer from "../components/Footer.vue";
 <style>
 html {
   scroll-behavior: smooth;
-  background-color: blue;
+  /* background-color: blue; */
   /* background: linear-gradient(blue, pink); */
   /* background-image: url(../assets/fonds/abstract-yellow-light-through-wet-glass.jpg); */
 }

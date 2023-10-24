@@ -1,218 +1,245 @@
 <script setup>
 // import PresentationItem from "./PresentationItem.vue";
 import PresentationItemSkills2 from "./PresentationItemSkills2.vue";
+import LocomotiveScroll from "locomotive-scroll";
+
+/* Locomotive scroll instance */
+const locomotiveScroll = new LocomotiveScroll();
 
 const cvURL =
   "https://lebrasdejesus.github.io/Portfolio/cvfchambinaud-public.pdf";
+
+// setLocomotiveScroll() {
+//       new LocomotiveScroll({
+//         el= this.$refs.container,
+//         smooth= true,
+//         multiplier= 5,
+//       });
+//     };
+//   mounted() {
+//     this.setLocomotiveScroll();
+//   };
 </script>
 
 <template>
-  <div class="espace-nav">
-    <div id="head">
-      <!-- <PresentationItem> -->
-      <div class="titre">
-        <h2>PRÉSENTATION</h2>
-      </div>
-      <div class="prez-et-skills">
-        <div class="paves-textes">
-          <h3>Qui suis-je ?</h3>
-          <div class="section-texte">
-            <h4>Mon passé</h4>
-            <p>
-              Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
-              mon expérience professionnelle et ma passion naissante pour le
-              développement Web !
-              <b>
-                <br />
-                <br />
-                J’ai en effet travaillé 20 ans en tant que maquettiste</b
-              >
-              au sein de diverses entreprises. J’y ai perfectionné mon sens du
-              détail, ainsi que ma capacité à produire des livrables à la fois
-              communicants, harmonieux et respectueux des différentes chartes
-              graphiques.
-            </p>
-          </div>
-
-          <div class="section-texte">
-            <h4>Ces temps-ci</h4>
-            <p>
-              Début 2023, j’ai entamé ma reconversion dans l’univers du
-              développement Web, où le graphisme rencontre le code. Pendant 4
-              mois, j’ai suivi à temps complet la
-              <b>formation «&nbsp;Développeur .NET fullstack&nbsp;»</b> chez
-              M2i, qui s’est ensuite conclue par un stage en juin.
-              <br /><br />Mon portfolio est justement là pour vous montrer les
-              quelques
-              <b
-                >projets (orientés Intégration/Front) accomplis pendant ce
-                mois.</b
-              >
-            </p>
-          </div>
-          <div class="section-texte">
-            <h4>Mon futur</h4>
-            <p>
-              Bien qu’encore débutante, j’ai à cœur de progresser et d’apprendre
-              tous les jours un peu plus&nbsp;: j’ai décidé de continuer mon
-              apprentissage avec la <b>3W Academy</b>, au rythme de 3 semaines
-              en entreprise et une semaine en cours. Je recherche donc un
-              <b
-                >contrat en alternance d’Intégratrice et/ou Développeuse
-                Front-End</b
-              >
-              sur la métropole lilloise. <br /><br />N’hésitez pas à me
-              <a href="#contact" class="link-text"><b>contacter</b></a> si mon
-              profil vous intéresse&nbsp;!
-            </p>
-          </div>
+  <div data-scroll-container>
+    <div class="espace-nav">
+      <div id="head">
+        <!-- <PresentationItem> -->
+        <div class="titre">
+          <h2>PRÉSENTATION</h2>
         </div>
-        <!-- </PresentationItem> -->
+        <div class="prez-et-skills">
+          <div class="paves-textes">
+            <h3 data-scroll data-scroll-speed="0.3">Qui suis-je ?</h3>
+            <div
+              class="section-texte"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-speed="-3"
+              data-scroll-class="appear"
+              data-scroll-repeat="true"
+            >
+              <h4>Mon passé</h4>
+              <p>
+                Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
+                mon expérience professionnelle et ma passion naissante pour le
+                développement Web !
+                <b>
+                  <br />
+                  <br />
+                  J’ai en effet travaillé 20 ans en tant que maquettiste</b
+                >
+                au sein de diverses entreprises. J’y ai perfectionné mon sens du
+                détail, ainsi que ma capacité à produire des livrables à la fois
+                communicants, harmonieux et respectueux des différentes chartes
+                graphiques.
+              </p>
+            </div>
 
-        <div class="super-container-hardSkills">
-          <h3>Mes compétences</h3>
+            <div data-scroll class="section-texte">
+              <h4>Ces temps-ci</h4>
+              <p>
+                Début 2023, j’ai entamé ma reconversion dans l’univers du
+                développement Web, où le graphisme rencontre le code. Pendant 4
+                mois, j’ai suivi à temps complet la
+                <b>formation «&nbsp;Développeur .NET fullstack&nbsp;»</b> chez
+                M2i, qui s’est ensuite conclue par un stage en juin.
+                <br /><br />Mon portfolio est justement là pour vous montrer les
+                quelques
+                <b
+                  >projets (orientés Intégration/Front) accomplis pendant ce
+                  mois.</b
+                >
+              </p>
+            </div>
+            <div data-scroll class="section-texte">
+              <h4>Mon futur</h4>
+              <p>
+                Bien qu’encore débutante, j’ai à cœur de progresser et
+                d’apprendre tous les jours un peu plus&nbsp;: j’ai décidé de
+                continuer mon apprentissage avec la <b>3W Academy</b>, au rythme
+                de 3 semaines en entreprise et une semaine en cours. Je
+                recherche donc un
+                <b
+                  >contrat en alternance d’Intégratrice et/ou Développeuse
+                  Front-End</b
+                >
+                sur la métropole lilloise. <br /><br />N’hésitez pas à me
+                <a href="#contact" class="link-text"><b>contacter</b></a> si mon
+                profil vous intéresse&nbsp;!
+              </p>
+            </div>
+          </div>
+          <!-- </PresentationItem> -->
 
-          <div class="container-hardSkills-titre">
-            <div class="titre-skills"><h4>Compétences techniques</h4></div>
-            <div class="container-two-containers-hard-skills">
-              <div class="two-containers-hard-skills margin-bottom">
-                <div class="container-hardSkills">
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/HTML5.svg"
-                        alt="picto Html"
-                        class="height100"
-                      />
-                    </template>
-                    <template #texte><p>HTML 5</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/CSS3_logo.svg"
-                        alt="picto Css"
-                        class="height100"
-                      />
-                    </template>
-                    <template #texte><p>CSS 3</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Unofficial_JavaScript_logo_2.svg"
-                        alt="picto Js"
-                      />
-                    </template>
-                    <template #texte><p>JavaScript</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Vuejs_Logo_2.svg"
-                        alt="picto Vue"
-                      />
-                    </template>
-                    <template #texte><p>Vue.js</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/React_Logo.svg"
-                        alt="picto React"
-                      />
-                    </template>
-                    <template #texte><p>React</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Tailwind_CSS_Logo.svg"
-                        alt="picto Tailwind"
-                        class="width100"
-                      />
-                    </template>
-                    <template #texte><p>Tailwind</p></template>
-                  </PresentationItemSkills2>
-                </div>
-                <div class="container-hardSkills">
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img src="../assets/pictos/Figma.svg" alt="picto Figma" />
-                    </template>
-                    <template #texte><p>Figma</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Adobe_XD_CC_icon.svg"
-                        alt="picto XD"
-                        class="height100"
-                      />
-                    </template>
-                    <template #texte><p>Adobe Xd</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Adobe_InDesign_CC_logo.svg"
-                        alt="picto Indesign"
-                        class="height100"
-                      />
-                    </template>
-                    <template #texte><p>Adobe Indesign</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Adobe_Photoshop_CC_icon.svg"
-                        alt="picto Photoshop"
-                        class="height100"
-                      />
-                    </template>
-                    <template #texte><p>Adobe Photoshop</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Adobe_Illustrator_CC_icon.svg"
-                        alt="picto Illustrator"
-                        class="height100"
-                      />
-                    </template>
-                    <template #texte><p>Adobe Illustrator</p></template>
-                  </PresentationItemSkills2>
-                  <PresentationItemSkills2>
-                    <template #image>
-                      <img
-                        src="../assets/pictos/Photopea_logo.svg"
-                        alt="picto Photopea"
-                      />
-                    </template>
-                    <template #texte><p>Photopea</p></template>
-                  </PresentationItemSkills2>
+          <div class="super-container-hardSkills">
+            <h3>Mes compétences</h3>
+
+            <div class="container-hardSkills-titre">
+              <div class="titre-skills"><h4>Compétences techniques</h4></div>
+              <div class="container-two-containers-hard-skills">
+                <div class="two-containers-hard-skills margin-bottom">
+                  <div class="container-hardSkills">
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/HTML5.svg"
+                          alt="picto Html"
+                          class="height100"
+                        />
+                      </template>
+                      <template #texte><p>HTML 5</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/CSS3_logo.svg"
+                          alt="picto Css"
+                          class="height100"
+                        />
+                      </template>
+                      <template #texte><p>CSS 3</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Unofficial_JavaScript_logo_2.svg"
+                          alt="picto Js"
+                        />
+                      </template>
+                      <template #texte><p>JavaScript</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Vuejs_Logo_2.svg"
+                          alt="picto Vue"
+                        />
+                      </template>
+                      <template #texte><p>Vue.js</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/React_Logo.svg"
+                          alt="picto React"
+                        />
+                      </template>
+                      <template #texte><p>React</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Tailwind_CSS_Logo.svg"
+                          alt="picto Tailwind"
+                          class="width100"
+                        />
+                      </template>
+                      <template #texte><p>Tailwind</p></template>
+                    </PresentationItemSkills2>
+                  </div>
+                  <div class="container-hardSkills">
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Figma.svg"
+                          alt="picto Figma"
+                        />
+                      </template>
+                      <template #texte><p>Figma</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Adobe_XD_CC_icon.svg"
+                          alt="picto XD"
+                          class="height100"
+                        />
+                      </template>
+                      <template #texte><p>Adobe Xd</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Adobe_InDesign_CC_logo.svg"
+                          alt="picto Indesign"
+                          class="height100"
+                        />
+                      </template>
+                      <template #texte><p>Adobe Indesign</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Adobe_Photoshop_CC_icon.svg"
+                          alt="picto Photoshop"
+                          class="height100"
+                        />
+                      </template>
+                      <template #texte><p>Adobe Photoshop</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Adobe_Illustrator_CC_icon.svg"
+                          alt="picto Illustrator"
+                          class="height100"
+                        />
+                      </template>
+                      <template #texte><p>Adobe Illustrator</p></template>
+                    </PresentationItemSkills2>
+                    <PresentationItemSkills2>
+                      <template #image>
+                        <img
+                          src="../assets/pictos/Photopea_logo.svg"
+                          alt="picto Photopea"
+                        />
+                      </template>
+                      <template #texte><p>Photopea</p></template>
+                    </PresentationItemSkills2>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="container-hardSkills-titre">
-            <div class="titre-skills"><h4>Savoir-être</h4></div>
-            <div class="container-hardSkills">
-              <ul>
-                <li>Réactive</li>
-                <li>Rigoureuse</li>
-                <li>Créative</li>
-                <li>Perséverante</li>
-                <li>À l'écoute</li>
-                <li>Sens de l'organisation</li>
-                <li>Maîtrise avancée du français</li>
-              </ul>
+            <div class="container-hardSkills-titre">
+              <div class="titre-skills"><h4>Savoir-être</h4></div>
+              <div class="container-hardSkills">
+                <ul>
+                  <li>Réactive</li>
+                  <li>Rigoureuse</li>
+                  <li>Créative</li>
+                  <li>Perséverante</li>
+                  <li>À l'écoute</li>
+                  <li>Sens de l'organisation</li>
+                  <li>Maîtrise avancée du français</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-button">
-        <!-- <button>
+        <div class="container-button">
+          <!-- <button>
                 <a
                   href="https://raw.githubusercontent.com/lebrasdejesus/Portfolio/10155ac4d053bbb40de05423900a778f1c3b5b13/src/assets/CV-FCHAMBINAUD.pdf"
                   target="_blank"
@@ -220,18 +247,19 @@ const cvURL =
                 >
               </button> -->
 
-        <button class="btn">
-          <a :href="cvURL" target="_blank" download="fchambinaud.pdf"
-            >Plus de détails sur mon cv</a
-          >
-        </button>
+          <button class="btn">
+            <a :href="cvURL" target="_blank" download="fchambinaud.pdf"
+              >Plus de détails sur mon cv</a
+            >
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
 .espace-nav {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 3rem;
   /* background-color: #397a89; */
   /* background-color: #f5fdfd; */
@@ -397,8 +425,8 @@ li {
 .titre-skills {
   display: flex;
   justify-content: center;
-  line-height: 0.7rem;
-  margin-bottom: 0.6rem;
+  /* line-height: 0.7rem; */
+  /* margin-bottom: 0.6rem; */
 }
 .container-two-containers-hard-skills {
   display: flex;
@@ -586,7 +614,7 @@ button:hover a {
     /* display: flex;
   justify-content: left;
   align-items: start; */
-    padding: 0 0 0.8rem 0;
+    /* padding: 0 0 0.8rem 0; */
     font-size: 1.1rem;
   }
   .prez-et-skills {

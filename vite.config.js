@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Portfolio2-lbdj/",
+  base: "/Portfolio2lbdj/",
 
   plugins: [
     vue(),

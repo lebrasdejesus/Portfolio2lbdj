@@ -35,6 +35,7 @@
   /* background-color: #116071; */
   background: linear-gradient(to top, #1c657c, #1c4856 50%, #1c4856 50%);
   min-height: 100vh;
+  /* height: 50rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +67,7 @@
   border-radius: 10rem;
 }
 .photo-fade-enter-active {
-  transition: all 1.5s ease-out;
+  transition: all 2.3s ease-out;
 }
 .photo-fade-enter-from {
   opacity: 0;

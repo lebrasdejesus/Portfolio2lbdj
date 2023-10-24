@@ -116,6 +116,8 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
   padding-top: 3rem;
   padding-bottom: 3rem;
   min-height: 100vh;
+  /* background-color: #116071; */
+  background: linear-gradient(to top, #1c657c, #1c4856 50%, #1c4856 50%);
 }
 #reals:target {
   padding-top: 5rem;

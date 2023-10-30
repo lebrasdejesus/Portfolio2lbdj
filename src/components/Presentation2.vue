@@ -1,10 +1,8 @@
 <script setup>
 // import PresentationItem from "./PresentationItem.vue";
 import PresentationItemSkills2 from "./PresentationItemSkills2.vue";
-import LocomotiveScroll from "locomotive-scroll";
-
-/* Locomotive scroll instance */
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from "locomotive-scroll";
+// const locomotiveScroll = new LocomotiveScroll();
 
 const cvURL =
   "https://lebrasdejesus.github.io/Portfolio/cvfchambinaud-public.pdf";
@@ -22,24 +20,35 @@ const cvURL =
 </script>
 
 <template>
-  <div data-scroll-container>
+  <div>
     <div class="espace-nav">
       <div id="head">
         <!-- <PresentationItem> -->
         <div class="titre">
-          <h2>PRÉSENTATION</h2>
+          <h2
+            class="title-linear-background"
+            v-motion
+            :initial="{ opacity: 0, y: -300 }"
+            :enter="{ opacity: 1, y: 0 }"
+            :delay="600"
+          >
+            PRÉSENTATION
+          </h2>
         </div>
         <div class="prez-et-skills">
           <div class="paves-textes">
-            <h3 data-scroll data-scroll-speed="0.3">Qui suis-je ?</h3>
-            <div
-              class="section-texte"
+            <!-- <h3
+              class="hor"
+              data-scroll-section
               data-scroll
+              data-scroll-speed="3"
               data-scroll-direction="horizontal"
-              data-scroll-speed="-3"
-              data-scroll-class="appear"
-              data-scroll-repeat="true"
             >
+              Qui suis-je ?
+            </h3> -->
+            <!-- <h3 v-scrollanimation>Qui suis-je ?</h3> -->
+            <h3>Qui suis-je ?</h3>
+            <div class="section-texte">
               <h4>Mon passé</h4>
               <p>
                 Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
@@ -57,7 +66,7 @@ const cvURL =
               </p>
             </div>
 
-            <div data-scroll class="section-texte">
+            <div class="section-texte">
               <h4>Ces temps-ci</h4>
               <p>
                 Début 2023, j’ai entamé ma reconversion dans l’univers du
@@ -68,12 +77,12 @@ const cvURL =
                 <br /><br />Mon portfolio est justement là pour vous montrer les
                 quelques
                 <b
-                  >projets (orientés Intégration/Front) accomplis pendant ce
-                  mois.</b
+                  >projets (orientés Intégration&nbsp;/ Front) accomplis pendant
+                  ce mois.</b
                 >
               </p>
             </div>
-            <div data-scroll class="section-texte">
+            <div class="section-texte">
               <h4>Mon futur</h4>
               <p>
                 Bien qu’encore débutante, j’ai à cœur de progresser et
@@ -258,6 +267,13 @@ const cvURL =
   </div>
 </template>
 <style scoped>
+/* .hor {
+  transform: translateX(-50rem);
+  transition: transform 0.5s ease;
+}
+[data-scroll-direction="horizontal"] .hor {
+  transform: translateX(0); 
+} */
 .espace-nav {
   /* min-height: 100vh; */
   padding-top: 3rem;
@@ -291,12 +307,22 @@ const cvURL =
   width: 100%;
   z-index: 1;
 }
+.title-linear-background {
+  background: linear-gradient(
+    to bottom,
+
+    #ffffff 55%,
+    #1c657c 75%
+  );
+  background-clip: text;
+  color: transparent;
+}
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0.3rem 3rem;
-  color: white;
+  /* color: white; */
   /* background-color: #397a89; */
   /* border-radius: 0 3rem 3rem 0; */
   /* border: 2px #397a89 solid; */
@@ -308,17 +334,29 @@ h2 {
   /* width: fit-content; */
   /* box-shadow: 0.6rem 0.6rem #ffffff,
     0.6rem 0.6rem 0.7rem rgba(57, 122, 137, 0.2); */
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  /* color: rgba(255, 255, 255, 0.5); */
+  /* box-shadow: #1c4856 3px 2px 3px; */
 }
 h3 {
   /* margin-bottom: 1rem; */
-  /* text-align: center; */
-  text-align: left;
+  text-align: center;
+  /* text-align: left; */
   padding: 0.3rem 3rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+/* h3 {
+  text-align: left;
+  padding: 0rem 1rem;
+  font-weight: 800;
+  font-size: 3.1rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat", sans-serif;
+} */
 h4 {
   /* text-align: left; */
   /* display: flex;
@@ -361,6 +399,9 @@ h4 {
     0.3rem 0.3rem 0.5rem rgba(57, 122, 137, 0.2); */
   border-top: 5px solid #e05900;
   border-bottom: 5px solid #e05900;
+  /* transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s; */
 }
 .height100 {
   height: 100%;
@@ -407,6 +448,7 @@ li {
   /* box-shadow: inset 0.6rem 0.6rem #397a89,
     0.3rem 0.3rem 0.5rem rgba(57, 122, 137, 0.2); */
   width: 100%;
+
   /* border-top: 5px solid #e05900;
     border-bottom: 5px solid #e05900; */
 }
@@ -519,6 +561,24 @@ button:hover a {
   padding-top: 6.1rem;
   margin-top: -6.1rem;
 }
+/*
+    This classes are for the directive. 
+    For each element observed by our directive, the before-enter class is added.
+  */
+.before-enter {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: all 2s ease-out;
+}
+
+/* 
+    If the element intersects with the viewport, the before-enter class is added.
+  */
+.enter {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 @media (min-width: 471px) {
   #head:target {
     padding-top: 9rem;
@@ -540,7 +600,7 @@ button:hover a {
     align-items: center;
     margin: 1rem auto;
     padding: 0;
-    max-width: 40rem;
+    max-width: 45rem;
   }
   .super-container-hardSkills {
     display: flex;
@@ -549,7 +609,7 @@ button:hover a {
     align-items: center;
     /* width: fit-content; */
     /* padding: 2rem 6rem; */
-    width: 40rem;
+    width: 44rem;
   }
   .container-two-containers-hard-skills {
     display: flex;
@@ -639,7 +699,7 @@ button:hover a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0rem 1rem 0 1rem;
     width: auto;
   }
   .container-hardSkills-titre {

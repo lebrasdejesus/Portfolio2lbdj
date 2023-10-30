@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import LocomotiveScroll from "locomotive-scroll";
 
 export default {
@@ -15,9 +15,9 @@ export default {
     this.setLocomotiveScroll();
   },
 };
-</script>
+</script> -->
 <template>
-  <main ref="container" data-scroll-container>
+  <main ref="container">
     <section
       className="hello"
       data-scroll

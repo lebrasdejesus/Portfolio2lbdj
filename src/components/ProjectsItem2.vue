@@ -1,12 +1,24 @@
+<script setup>
+const isInvisible = ref(true);
+
+const toggleTexte = () => {
+  isInvisible.value = !isInvisible.value;
+};
+</script>
+
 <template>
   <div class="item">
     <div class="img">
       <slot name="image"></slot>
     </div>
 
-    <div class="section-texte">
+    <div
+      class="section-texte"
+      :class="{ visible: !isInvisible, retracte: isInvisible }"
+    >
       <h4>
         <slot name="sous-titre"></slot>
+        <slot name="fleche" @click="toggleTexte"></slot>
       </h4>
       <p>
         <slot></slot>
@@ -53,13 +65,13 @@
   border-bottom: 5px solid #e05900;
   transform: translateY(-0.4rem);
 }
-/* .retracte {
+.retracte {
   height: 10rem;
   overflow: hidden;
 }
 .visible {
   height: fit-content;
-} */
+}
 h4 {
   padding: 0 0 0.8rem 0;
   font-weight: 700;
@@ -77,9 +89,8 @@ h4 {
     /* grid-template-columns: repeat(2, 1fr); */
     /* grid-gap: 1.2rem; */
     /* border: 1px rgba(208, 208, 208, 0.3) solid; */
-    /* padding: 1.5rem 6rem; */
-    padding: 1.5rem 0rem;
-    width: 44rem;
+    padding: 1.5rem 6rem;
+    /* max-width: 40rem; */
   }
   .img {
     height: fit-content;
@@ -96,7 +107,7 @@ h4 {
     /* border: 1px rgba(208, 208, 208, 0.8) solid; */
     /* margin-top: 1rem; */
     padding: 1.5rem 2rem;
-    /* max-width: 40rem; */
+    max-width: 40rem;
   }
   h4:after {
     content: "";

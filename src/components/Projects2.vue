@@ -9,7 +9,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
 <template>
   <div id="reals">
     <div class="titre">
-      <h2 class="title-linear-background">RÉALISATIONS</h2>
+      <h2>RÉALISATIONS</h2>
     </div>
     <div class="grid-projects flex-project">
       <ProjectsItem>
@@ -24,6 +24,9 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             >Reproduction d'un site vitrine</a
           ></template
         >
+        <template #fleche>
+          <span> ↴</span>
+        </template>
         <p>
           Ceci est le projet <b>Vue.js</b> le plus abouti que j'ai réalisé (en
           dehors de ce portfolio). J'ai commencé ce projet à la fin de mon
@@ -60,6 +63,9 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             >Divers exercices en HTML, CSS et JavaScript</a
           ></template
         >
+        <template #fleche>
+          <span @click="toggleTexte"> ↴</span>
+        </template>
         <p>
           J'ai décidé de me lancer dans la création de projets en <b>Vue.js</b>,
           afin de renforcer mes compétences en <b>JavaScript</b>. J'ai commencé
@@ -91,6 +97,9 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             >Reproduction de la navbar et slider du site Suzuki</a
           >
           <!-- <span @click="toggleTexte">&nbsp;↴</span> -->
+        </template>
+        <template #fleche>
+          <span @click="toggleTexte"> ↴</span>
         </template>
         <p>
           Ce fut mon tout premier projet en <b>Vue.js</b>. Mon maître de stage
@@ -147,15 +156,6 @@ template {
   width: 100%;
   z-index: 1;
 }
-.title-linear-background {
-  background: linear-gradient(
-    to bottom,
-    /* rgba(28, 101, 124, 1) 0%, */ #ffffff 40%,
-    #e05900 80%
-  );
-  background-clip: text;
-  color: transparent;
-}
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -164,8 +164,6 @@ h2 {
   color: white;
   display: flex;
   justify-content: center;
-  font-size: 2.2rem;
-  letter-spacing: 0.2rem;
 }
 a {
   color: #e05900;

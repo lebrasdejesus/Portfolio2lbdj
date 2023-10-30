@@ -6,25 +6,37 @@
     >
       <img src="../../assets/Lakson-NB.jpg" alt="Miniature Lakson NB" />
       <img src="../../assets/Lakson-coul.jpg" alt="Miniature Lakson coul" />
+      <!-- <img src="../../assets/Suzuki-coul.jpg" alt="Miniature Lakson coul" /> -->
     </a>
   </div>
 </template>
 <style scoped>
 img {
   max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
 }
 .height {
   position: relative;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
 }
 .height img:nth-child(2) {
   position: absolute;
   right: 0;
   opacity: 0;
+
   transition: opacity ease 0.4s;
-  cursor: pointer;
 }
 .height:hover img:nth-child(2) {
   opacity: 1;
   cursor: pointer;
+}
+a {
+  margin: 0;
+  padding: 0;
+  line-height: 0rem;
 }
 </style>

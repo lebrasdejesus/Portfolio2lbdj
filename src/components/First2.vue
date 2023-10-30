@@ -1,7 +1,12 @@
 <template>
-  <div class="englobeur-first">
-    <div class="text-photo">
-      <div class="text">
+  <div data-scroll-container class="englobeur-first">
+    <div data-scroll-section class="text-photo">
+      <div
+        class="text"
+        data-scroll
+        data-scroll-repeat="true"
+        data-scroll-speed="-1"
+      >
         <Transition appear name="slide-fade1">
           <div class="bienvenue">BIENVENUE</div>
         </Transition>
@@ -10,7 +15,7 @@
         </Transition>
       </div>
       <transition appear name="photo-fade">
-        <div class="container-photo">
+        <div class="container-photo" data-scroll data-scroll-speed="-1">
           <img
             src="../assets/profil-carre-222.jpg"
             alt="photo profil"
@@ -114,7 +119,7 @@
 }
 .slide-fade2-enter-active {
   /* transition: all 1s ease; */
-  transition: all 1.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition-delay: 0.6s;
 }
 

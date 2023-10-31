@@ -142,6 +142,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  margin: 0.5rem 1rem 2rem 1rem;
 }
 .titre {
   width: 100%;
@@ -165,12 +166,13 @@ h2 {
   display: flex;
   justify-content: center;
   font-size: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 a {
   color: #e05900;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 p {
   font-size: 0.9rem;

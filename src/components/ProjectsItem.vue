@@ -11,6 +11,11 @@
       <p>
         <slot></slot>
       </p>
+      <div class="btn-continue">
+        <span class="btn-open-text material-symbols-rounded">
+          keyboard_double_arrow_down
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -23,9 +28,9 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  /* border: 1px rgba(208, 208, 208, 0.8) solid; */
   /* margin-top: 1rem; */
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
 }
 .img {
   width: 100%;
@@ -44,7 +49,9 @@
   /* flex: 1; */
   flex-direction: column;
   justify-content: start;
-  align-items: start;
+  /* align-items: start; */
+  /* justify-content: center; */
+  align-items: center;
   background-color: #fff;
   /* margin: 0.5rem 0 2rem 0; */
   margin: 0 0 2rem 0;
@@ -52,6 +59,40 @@
   border-top: 5px solid #e05900;
   border-bottom: 5px solid #e05900;
   transform: translateY(-0.4rem);
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+}
+.btn-continue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0rem;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 90%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  height: 4rem;
+  width: 100%;
+}
+.btn-open-text {
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* background-color: #d35400; */
+  border-radius: 10rem;
+  background-color: #e05900;
+  box-shadow: #838e93 0.2rem 0.2rem 0.7rem;
+  border: #fff 2px solid;
+  color: #fff;
+  align-items: center;
 }
 /* .retracte {
   height: 10rem;
@@ -65,6 +106,7 @@ h4 {
   font-weight: 700;
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
 /* h4:after {
   content: " ↴";
@@ -101,8 +143,8 @@ h4 {
   h4:after {
     content: "";
   }
-  .section-texte:hover {
+  /* .section-texte:hover {
     height: fit-content;
-  }
+  } */
 }
 </style>

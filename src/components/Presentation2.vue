@@ -335,7 +335,7 @@ h2 {
   /* box-shadow: 0.6rem 0.6rem #ffffff,
     0.6rem 0.6rem 0.7rem rgba(57, 122, 137, 0.2); */
   font-size: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   /* color: rgba(255, 255, 255, 0.5); */
   /* box-shadow: #1c4856 3px 2px 3px; */
 }

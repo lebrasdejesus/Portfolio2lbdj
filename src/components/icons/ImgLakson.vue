@@ -11,17 +11,20 @@
   </div>
 </template>
 <style scoped>
-img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  height: fit-content;
-}
 .height {
   position: relative;
   margin: 0;
   padding: 0;
-  height: fit-content;
+  /* height: fit-content; */
+  max-height: 15rem;
+  overflow: hidden;
+}
+img {
+  /* max-width: 100%; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 .height img:nth-child(2) {
   position: absolute;

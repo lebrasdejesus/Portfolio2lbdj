@@ -11,10 +11,16 @@
 </template>
 <style scoped>
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 .height {
   position: relative;
+  max-height: 15rem;
+  overflow: hidden;
 }
 .height img:nth-child(2) {
   position: absolute;

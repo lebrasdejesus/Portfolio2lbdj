@@ -21,9 +21,14 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             href="https://14h02m10s.github.io/ExerciceCopieSiteResto/#/"
             target="blank"
             class="link-text"
-            >Reproduction d'un site vitrine</a
-          ></template
-        >
+            >Reproduction d'un site vitrine&nbsp;</a
+          ><a
+            href="https://14h02m10s.github.io/ExerciceCopieSiteResto/#/"
+            target="blank"
+            ><img
+              src="../assets/external-orange.svg"
+              class="picto-external-link" /></a
+        ></template>
         <p>
           Ceci est le projet <b>Vue.js</b> le plus abouti que j'ai réalisé (en
           dehors de ce portfolio). J'ai commencé ce projet à la fin de mon
@@ -57,9 +62,12 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             href="https://14h02m10s.github.io/TestVue-14h/"
             target="blank"
             class="link-text"
-            >Divers exercices en HTML, CSS et JavaScript</a
-          ></template
-        >
+            >Divers exercices en HTML, CSS et JavaScript&nbsp;</a
+          ><a href="https://14h02m10s.github.io/TestVue-14h/" target="blank"
+            ><img
+              src="../assets/external-orange.svg"
+              class="picto-external-link" /></a
+        ></template>
         <p>
           J'ai décidé de me lancer dans la création de projets en <b>Vue.js</b>,
           afin de renforcer mes compétences en <b>JavaScript</b>. J'ai commencé
@@ -88,8 +96,14 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             href="https://14h02m10s.github.io/ExerciceNavbarEtCarrouselSuzuki/"
             target="blank"
             class="link-text"
-            >Reproduction de la navbar et slider du site Suzuki</a
-          >
+            >Reproduction de la navbar et slider du site Suzuki&nbsp;</a
+          ><a
+            href="https://14h02m10s.github.io/ExerciceNavbarEtCarrouselSuzuki/"
+            target="blank"
+            ><img
+              src="../assets/external-orange.svg"
+              class="picto-external-link"
+          /></a>
           <!-- <span @click="toggleTexte">&nbsp;↴</span> -->
         </template>
         <p>
@@ -148,12 +162,13 @@ template {
   width: 100%;
   z-index: 1;
 }
+/* .title-linear-background {
+  background: linear-gradient(to bottom, #ffffff 40%, #e05900 80%);
+  background-clip: text;
+  color: transparent;
+} */
 .title-linear-background {
-  background: linear-gradient(
-    to bottom,
-    /* rgba(28, 101, 124, 1) 0%, */ #ffffff 40%,
-    #e05900 80%
-  );
+  background: linear-gradient(to bottom, #ffffff 55%, #1c657c 80%);
   background-clip: text;
   color: transparent;
 }
@@ -191,7 +206,10 @@ p {
   color: #fff;
   box-shadow: inset 700px 0 0 0 #e05900;
 }
-
+.picto-external-link {
+  transform: translateY(0.2rem);
+  cursor: pointer;
+}
 @media (min-width: 471px) {
   #reals:target {
     padding-top: 8rem;
@@ -230,11 +248,15 @@ p {
     flex-wrap: wrap;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.7rem;
     padding: 0.3rem 3rem;
   }
   p {
     font-size: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .flex-project {
   }
 }
 </style>

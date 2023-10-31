@@ -4,7 +4,7 @@
       href="https://14h02m10s.github.io/ExerciceNavbarEtCarrouselSuzuki/"
       target="blank"
     >
-      <img src="../../assets/Suzuki-NB.jpg" alt="Miniature Suzuki NB" />
+      <img src="../../assets/Suzuki-orange.jpg" alt="Miniature Suzuki NB" />
       <img src="../../assets/Suzuki-coul.jpg" alt="Miniature Suzuki coul" />
     </a>
   </div>

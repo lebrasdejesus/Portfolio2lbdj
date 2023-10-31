@@ -1,18 +1,38 @@
+<script>
+export default {
+  data() {
+    return {
+      isExpanded: false,
+      // text: "Votre texte ici. Ceci est un texte qui sera masqué en overflow."
+    };
+  },
+  methods: {
+    toggleExpansion() {
+      this.isExpanded = !this.isExpanded;
+    },
+  },
+};
+</script>
+
 <template>
   <div class="item">
     <div class="img">
       <slot name="image"></slot>
     </div>
 
-    <div class="section-texte">
+    <div class="section-texte" :class="{ expanded: isExpanded }">
       <h4>
         <slot name="sous-titre"></slot>
       </h4>
-      <p>
+      <p class="content">
         <slot></slot>
       </p>
       <div class="btn-continue">
-        <span class="btn-open-text material-symbols-rounded">
+        <span
+          class="btn-open-text material-symbols-rounded"
+          @click="toggleExpansion"
+          :class="{ expanded: isExpanded }"
+        >
           keyboard_double_arrow_down
         </span>
       </div>
@@ -35,7 +55,6 @@
 .img {
   width: 100%;
   /* height: fit-content; */
-  /* border: 1px purple dashed; */
   /* display: block; */
   margin: 0;
   padding: 0;
@@ -63,6 +82,19 @@
   overflow: hidden;
   position: relative;
 }
+.section-texte.expanded {
+  width: auto;
+  height: auto;
+  padding-bottom: 4rem;
+}
+
+.section-texte.expanded .content {
+  white-space: normal;
+  text-overflow: initial;
+}
+.expanded {
+  /* transition: 2s ease-out; */
+}
 .btn-continue {
   display: flex;
   align-items: center;
@@ -89,10 +121,15 @@
   /* background-color: #d35400; */
   border-radius: 10rem;
   background-color: #e05900;
-  box-shadow: #838e93 0.2rem 0.2rem 0.7rem;
+  box-shadow: #838e93 0rem 0rem 0.7rem;
   border: #fff 2px solid;
   color: #fff;
   align-items: center;
+  cursor: pointer;
+}
+.btn-open-text.expanded {
+  transform: rotate(180deg);
+  transition: 0.5s ease-out;
 }
 /* .retracte {
   height: 10rem;

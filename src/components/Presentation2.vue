@@ -312,7 +312,7 @@ const cvURL =
     to bottom,
 
     #ffffff 55%,
-    #1c657c 75%
+    #1c657c 80%
   );
   background-clip: text;
   color: transparent;
@@ -600,7 +600,7 @@ button:hover a {
     align-items: center;
     margin: 1rem auto;
     padding: 0;
-    max-width: 45rem;
+    max-width: 44rem;
   }
   .super-container-hardSkills {
     display: flex;
@@ -661,13 +661,13 @@ button:hover a {
     position: relative;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.7rem;
     padding: 0.3rem 3rem;
   }
   h3 {
     text-align: left;
     padding: 0.3rem 3rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   h4 {
     /* text-align: left; */
@@ -723,6 +723,24 @@ button:hover a {
   }
   p {
     font-size: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .super-container-hardSkills {
+    width: 44rem;
+  }
+  .two-containers-hard-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: left;
+  }
+  .container-hardSkills {
+    margin: 0 3rem;
+  }
+  ul {
+    column-count: 2;
+    column-gap: 0;
   }
 }
 </style>

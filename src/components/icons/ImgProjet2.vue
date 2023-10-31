@@ -1,7 +1,10 @@
 <template>
   <div class="height">
     <a href="https://14h02m10s.github.io/TestVue-14h/" target="blank">
-      <img src="../../assets/ImgProjet2-NB.jpg" alt="Miniature Projet2 NB" />
+      <img
+        src="../../assets/ImgProjet2-orange.jpg"
+        alt="Miniature Projet2 NB"
+      />
       <img
         src="../../assets/ImgProjet2-coul.jpg"
         alt="Miniature Projet2 coul"

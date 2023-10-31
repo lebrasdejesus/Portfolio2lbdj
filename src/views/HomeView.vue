@@ -5,8 +5,9 @@ import First2 from "../components/First2.vue";
 // import testLocomotive from "../components/testLocomotive.vue";
 import Presentation2 from "../components/Presentation2.vue";
 import Projects from "../components/Projects.vue";
-import Contact from "../components/Contact.vue";
-import Footer from "../components/Footer.vue";
+// import Contact from "../components/Contact.vue";
+import Contact2 from "../components/Contact2.vue";
+// import Footer from "../components/Footer.vue";
 
 import LocomotiveScroll from "locomotive-scroll";
 import { onMounted } from "vue";
@@ -26,17 +27,16 @@ onMounted(() => {
     <!-- <testLocomotive /> -->
     <Presentation2 />
     <Projects />
-    <Contact />
-    <Footer />
+    <Contact2 />
+    <!-- <Footer /> -->
   </main>
 </template>
 
 <style>
 html {
   scroll-behavior: smooth;
-  /* background-color: blue; */
-  /* background: linear-gradient(blue, pink); */
-  /* background-image: url(../assets/fonds/abstract-yellow-light-through-wet-glass.jpg); */
+  background-color: blue;
+  /* background-color: #e05900; */
 }
 
 /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */

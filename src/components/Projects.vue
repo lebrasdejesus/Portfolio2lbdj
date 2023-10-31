@@ -138,6 +138,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* margin-bottom: 3rem; */
 }
 #reals:target {
   padding-top: 5rem;
@@ -156,7 +157,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin: 0.5rem 1rem 2rem 1rem;
+  margin: 0.5rem 1rem 0rem 1rem;
 }
 .titre {
   width: 100%;

@@ -139,10 +139,14 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
   align-items: center;
   flex-direction: column;
   /* margin-bottom: 3rem; */
+  z-index: 2;
+  min-width: none;
 }
 #reals:target {
   padding-top: 5rem;
-  margin-top: -5rem;
+  margin-top: -2rem;
+  /* padding-top: 6.1rem; */
+  /* margin-top: -6.1rem; */
 }
 template {
   margin: 0;

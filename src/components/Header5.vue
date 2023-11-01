@@ -62,7 +62,7 @@ export default {
   right: 0;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 10;
 }
 .orange {
   /* background-color: #219db2; */

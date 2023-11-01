@@ -35,8 +35,8 @@ onMounted(() => {
 <style>
 html {
   scroll-behavior: smooth;
-  background-color: blue;
-  /* background-color: #e05900; */
+  background-color: #e05900;
+  /* background-color: blue; */
 }
 
 /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */

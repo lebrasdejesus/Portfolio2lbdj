@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  border-top: 5px solid #e05900;
 }
 p {
   color: white;

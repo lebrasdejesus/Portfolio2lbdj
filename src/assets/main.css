@@ -12,7 +12,9 @@
 a {
   text-decoration: none;
   /* color: #219db2; */
-  color: #397A89;
+  /* color: #397A89; */
+  color: #116071;
+
   /* transition: 0.4s; */
   cursor: pointer;
 }

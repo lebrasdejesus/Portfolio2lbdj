@@ -25,7 +25,7 @@ const cvURL =
       <div id="head">
         <!-- <PresentationItem> -->
         <div class="titre">
-          <h2
+          <!-- <h2
             class="title-linear-background"
             v-motion
             :initial="{ opacity: 0, y: -300 }"
@@ -33,7 +33,8 @@ const cvURL =
             :delay="600"
           >
             PRÉSENTATION
-          </h2>
+          </h2> -->
+          <h2 class="title-linear-background">PRÉSENTATION</h2>
         </div>
         <div class="prez-et-skills">
           <div class="paves-textes">
@@ -53,7 +54,7 @@ const cvURL =
               <p>
                 Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
                 mon expérience professionnelle et ma passion naissante pour le
-                développement Web !
+                développement web !
                 <b>
                   <br />
                   <br />
@@ -108,7 +109,7 @@ const cvURL =
             <div class="container-hardSkills-titre">
               <div class="titre-skills"><h4>Compétences techniques</h4></div>
               <div class="container-two-containers-hard-skills">
-                <div class="two-containers-hard-skills margin-bottom">
+                <div class="two-containers-hard-skills">
                   <div class="container-hardSkills">
                     <PresentationItemSkills2>
                       <template #image>
@@ -306,17 +307,18 @@ const cvURL =
   /* justify-content: start; */
   width: 100%;
   z-index: 1;
+  color: #fff;
 }
-.title-linear-background {
+/* .title-linear-background {
   background: linear-gradient(
     to bottom,
 
     #ffffff 55%,
-    #1c657c 80%
+    rgba(255, 255, 255, 0) 80%
   );
   background-clip: text;
   color: transparent;
-}
+} */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -422,17 +424,20 @@ li {
   list-style-type: none;
   font-size: 0.9rem;
 }
+a {
+  color: #e05900;
+}
 .link-text {
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: inset 0 0 0 0 #116071;
+  box-shadow: inset 0 0 0 0 #e05900;
   padding: 0 0.25rem;
   margin: 0 -0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .link-text:hover {
   color: #fff;
-  box-shadow: inset 200px 0 0 0 #116071;
+  box-shadow: inset 200px 0 0 0 #e05900;
 }
 .super-container-hardSkills {
   /* display: flex;
@@ -600,7 +605,7 @@ button:hover a {
     align-items: center;
     margin: 1rem auto;
     padding: 0;
-    max-width: 44rem;
+    width: 44rem;
   }
   .super-container-hardSkills {
     display: flex;
@@ -627,12 +632,10 @@ button:hover a {
     justify-content: left;
     margin: 1rem;
     width: 100%;
+    /* width: 44rem; */
   }
   .container-hardSkills {
-    margin: 0 1rem;
-  }
-  .margin-bottom {
-    padding-bottom: 0rem;
+    margin: 0 2rem;
   }
   .section-texte {
     margin: 0.5rem 0 2rem 0;
@@ -692,14 +695,16 @@ button:hover a {
   }
   .paves-textes {
     margin: 0;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+    margin: 0 1rem;
   }
   .super-container-hardSkills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0rem 1rem 0 1rem;
+    /* padding: 0 1rem; */
+    margin: 0 1rem;
     width: auto;
   }
   .container-hardSkills-titre {
@@ -721,6 +726,9 @@ button:hover a {
     display: flex;
     flex-direction: column;
   }
+  li {
+    font-size: 1rem;
+  }
   p {
     font-size: 1rem;
   }
@@ -736,11 +744,15 @@ button:hover a {
     align-items: left;
   }
   .container-hardSkills {
-    margin: 0 3rem;
+    /* margin: 0 2rem; */
   }
   ul {
     column-count: 2;
     column-gap: 0;
+  }
+  .paves-textes,
+  .container-hardSkills-titre {
+    width: 44rem;
   }
 }
 </style>

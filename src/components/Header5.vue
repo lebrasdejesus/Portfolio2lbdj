@@ -137,7 +137,9 @@ h1 {
 }
 @media (min-width: 471px) {
   .container1 {
-    /* box-shadow: 0px 5px 10px rgba(169, 169, 169, 0.5); */
+    box-shadow: 0px 5px 10px rgba(37, 37, 37, 0.3);
+    /* height: 96.9px; */
+    height: 6.056rem;
   }
   nav {
     padding: 0.5rem;
@@ -159,7 +161,6 @@ h1 {
   .blue,
   .responsive {
     background-color: #1c657c;
-    box-shadow: 0px 0px 0px rgba(169, 169, 169, 0.5);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -180,6 +181,7 @@ h1 {
     display: grid;
     grid-template-columns: 2fr 5fr;
     color: white;
+    height: 5.5rem;
   }
   nav {
     font-size: 1.3rem;
@@ -204,6 +206,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: fit-content;
+    height: 5.5rem;
   }
   .responsive a {
     display: block;
@@ -211,6 +214,9 @@ h1 {
   }
 }
 @media (min-width: 1135px) {
+  .container1 {
+    height: 3.8rem;
+  }
   .orange {
     height: 3.8rem;
   }

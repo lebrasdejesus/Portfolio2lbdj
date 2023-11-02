@@ -73,7 +73,7 @@ export default {
   align-items: center;
   background-color: #fff;
   /* margin: 0.5rem 0 2rem 0; */
-  margin: 0 0 2rem 0;
+  /* margin: 0 0 2rem 0; */
   padding: 2rem;
   border-top: 5px solid #e05900;
   border-bottom: 5px solid #e05900;
@@ -81,19 +81,12 @@ export default {
   height: 15rem;
   overflow: hidden;
   position: relative;
+  transition: height 5s; /* Ajoutez une transition à la propriété max-height */
 }
 .section-texte.expanded {
   width: auto;
   height: auto;
   padding-bottom: 4rem;
-}
-
-.section-texte.expanded .content {
-  white-space: normal;
-  text-overflow: initial;
-}
-.expanded {
-  /* transition: 2s ease-out; */
 }
 .btn-continue {
   display: flex;
@@ -174,7 +167,9 @@ h4 {
     /* grid-gap: 0.2rem; */
     /* border: 1px rgba(208, 208, 208, 0.8) solid; */
     /* margin-top: 1rem; */
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
+    margin: 0 1rem;
+
     /* max-width: 40rem; */
   }
   h4:after {
@@ -183,5 +178,7 @@ h4 {
   /* .section-texte:hover {
     height: fit-content;
   } */
+}
+@media (min-width: 1440px) {
 }
 </style>

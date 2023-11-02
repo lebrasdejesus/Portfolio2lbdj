@@ -24,87 +24,93 @@ import Footer from "./Footer.vue";
     <div class="titre">
       <h2 class="title-linear-background">CONTACT</h2>
     </div>
-    <div class="login-card-container">
-      <p>Pour m'écrire vous pouvez :</p>
-      <ul>
-        <li>utiliser ce formulaire de contact</li>
-        <li>
-          me contacter via
-          <a
-            href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9rique-c-16195121b/"
-            target="_blank"
-            class="hover-list"
-            ><b>Linkedin</b></a
-          >
-        </li>
-        <li>
-          copier mon adresse mail
-          <span
-            v-clipboard="'f.chambinaud@gmail.com'"
-            @click="ToggleCopied"
-            class="hover-list"
-            ><b>ici</b></span
-          >
-        </li>
-      </ul>
-      <p :class="{ copy: !isCopied, copied: isCopied }">C'est copié !</p>
-      <form
-        action="https://formcarry.com/s/DPW3iJbBnC"
-        method="POST"
-        accept-charset="UTF-8"
-        class="login-card-form"
-      >
-        <div class="login-card-form-2">
+    <div class="container-except-titre">
+      <div class="login-card-container">
+        <p>Pour m'écrire vous pouvez :</p>
+        <ul>
+          <li>utiliser ce formulaire de contact</li>
+          <li>
+            me contacter via
+            <a
+              href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9rique-c-16195121b/"
+              target="_blank"
+              class="hover-list"
+              ><b>Linkedin</b></a
+            >
+          </li>
+          <li>
+            copier mon adresse mail
+            <span
+              v-clipboard="'f.chambinaud@gmail.com'"
+              @click="ToggleCopied"
+              class="hover-list"
+              ><b>ici</b></span
+            >
+          </li>
+        </ul>
+        <p :class="{ copy: !isCopied, copied: isCopied }">C'est copié !</p>
+        <form
+          action="https://formcarry.com/s/DPW3iJbBnC"
+          method="POST"
+          accept-charset="UTF-8"
+          class="login-card-form"
+        >
+          <div class="login-card-form-2">
+            <div class="form-item">
+              <span class="form-item-icon material-symbols-rounded"
+                >person</span
+              >
+              <input
+                type="text"
+                placeholder="Nom"
+                id="nom"
+                name="lastName"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <span class="form-item-icon material-symbols-rounded"
+                >person</span
+              >
+              <input
+                type="text"
+                placeholder="Prénom"
+                id="prenom"
+                name="firstName"
+                required
+              />
+            </div>
+          </div>
+
           <div class="form-item">
-            <span class="form-item-icon material-symbols-rounded">person</span>
+            <span class="form-item-icon material-symbols-rounded">mail</span>
             <input
-              type="text"
-              placeholder="Nom"
-              id="nom"
-              name="lastName"
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
               required
             />
           </div>
+          <input type="hidden" name="_gotcha" />
           <div class="form-item">
-            <span class="form-item-icon material-symbols-rounded">person</span>
-            <input
-              type="text"
-              placeholder="Prénom"
-              id="prenom"
-              name="firstName"
-              required
-            />
+            <textarea id="message" name="message" required></textarea>
           </div>
-        </div>
+        </form>
+      </div>
+      <div class="container-btn-envoyer">
+        <button type="submit" class="btn">Envoyer</button>
+      </div>
 
-        <div class="form-item">
-          <span class="form-item-icon material-symbols-rounded">mail</span>
-          <input
-            type="email"
-            placeholder="Email"
-            id="email"
-            name="email"
-            required
-          />
-        </div>
-        <input type="hidden" name="_gotcha" />
-        <div class="form-item">
-          <textarea id="message" name="message" required></textarea>
-        </div>
-      </form>
-    </div>
-    <div class="container-btn-envoyer">
-      <button type="submit" class="btn">Envoyer</button>
-    </div>
-
-    <div class="btn-return">
-      <a href="#head"
-        ><button class="btn-carre">
-          <span class="material-symbols-rounded">
-            keyboard_double_arrow_up
-          </span>
-        </button></a
-      >
+      <div class="btn-return">
+        <a href="#head"
+          ><button class="btn-carre">
+            <span class="material-symbols-rounded">
+              keyboard_double_arrow_up
+            </span>
+          </button></a
+        >
+      </div>
     </div>
     <div class="z-index">
       <Footer />
@@ -149,12 +155,17 @@ import Footer from "./Footer.vue";
   margin: 0 3rem; */
   width: 100%;
   z-index: 1;
+  color: #fff;
 }
-.title-linear-background {
-  background: linear-gradient(to bottom, #ffffff 55%, #1c657c 80%);
+/* .title-linear-background {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 55%,
+    rgba(255, 255, 255, 0) 80%
+  );
   background-clip: text;
   color: transparent;
-}
+} */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -164,6 +175,12 @@ h2 {
   justify-content: center;
   font-size: 2.2rem;
   letter-spacing: 0.1rem;
+}
+.container-except-titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .login-card-container {
   /* min-height: 80vh; */
@@ -179,6 +196,7 @@ h2 {
   /* border-top: 5px solid #e05900;
   border-bottom: 5px solid #e05900; */
   z-index: 4;
+  width: 100%;
 }
 .login-card-form {
   display: flex;
@@ -363,7 +381,7 @@ button:hover a {
   /* border: #e05900 2px solid; */
 }
 p {
-  font-size: 1rem;
+  /* font-size: 0.9rem; */
   font-weight: 700;
   text-align: justify;
   margin-bottom: 0.7rem;
@@ -371,28 +389,28 @@ p {
 }
 ul {
   color: #fff;
-  padding: 0;
+  /* padding-left: 0rem; */
+  /* font-size: 0.9rem; */
 }
 .copy {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  /* color: #397a89; */
-  color: rgba(17, 96, 113, 0);
+  color: rgba(255, 255, 255, 0);
   animation: changerCouleur 2s ease-in-out;
 }
 @keyframes changerCouleur {
   0% {
     /* color: rgba(57, 122, 137, 1); */
-    color: rgba(17, 96, 113, 1);
+    color: rgba(255, 255, 255, 1);
   }
   100% {
-    color: rgba(17, 96, 113, 0);
+    color: rgba(255, 255, 255, 0);
   }
 }
 .copied {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: rgba(17, 96, 113, 0);
+  color: rgba(255, 255, 255, 0);
 }
 /* .englobeur-btn-haut {
   display: flex;
@@ -425,15 +443,15 @@ ul {
 .hover-list {
   font-weight: 600;
   font-size: 1rem;
-  color: #fff;
-  box-shadow: inset 0 0 0 0 #fff;
+  color: #ff6c0b;
+  box-shadow: inset 0 0 0 0 #e05900;
   padding: 0 0.25rem;
   margin: 0 -0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .hover-list:hover {
-  color: #116071;
-  box-shadow: inset 200px 0 0 0 #fff;
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #e05900;
   cursor: pointer;
 }
 /* #contact:target {
@@ -441,7 +459,9 @@ ul {
   margin-top: -6rem;
 } */
 #contact:target {
-  padding-top: 5rem;
+  /* padding-top: 5rem;
+  margin-top: 0rem; */
+  padding-top: 6.1rem;
   margin-top: 0rem;
 }
 .z-index {
@@ -451,27 +471,53 @@ ul {
   width: 100%;
 }
 @media (min-width: 471px) {
+  #contact {
+    min-height: 1050px;
+  }
   #contact:target {
-    padding-top: 8rem;
+    padding-top: 9.056rem;
     margin-top: 0rem;
   }
 }
 @media (min-width: 768px) {
-  .titre {
-    margin: 0 6rem;
+  #contact {
+    max-height: 1250px;
+    /* justify-content: center; */
   }
-  .login-card-form {
-    max-width: 50rem;
+  #contact:target {
+    padding-top: 9.056rem;
+    margin-top: 0rem;
+  }
+  /* .login-card-form {
+    max-width: 44rem;
+  } */
+  .login-card-container {
+    max-width: 44rem;
+    padding: 2rem 0rem;
   }
   .login-card-form-2 {
     display: flex;
     flex-direction: row;
   }
+  ul {
+    /* padding-left: 2.5rem; */
+  }
 }
 @media (min-width: 1135px) {
+  #contact {
+    height: 100vh;
+    /* justify-content: center; */
+  }
   #contact:target {
     padding-top: 7rem;
-    margin-top: -7rem;
+    margin-top: -5rem;
+  }
+  .container-except-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }
 </style>

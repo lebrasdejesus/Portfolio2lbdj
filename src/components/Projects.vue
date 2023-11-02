@@ -42,7 +42,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
           <b
             >une barre de navigation, un pied de page, plusieurs pages, des
             boutons, et une galerie de photos</b
-          >. <br />
+          >. <br /><br />
           Il reste encore des améliorations à apporter, car certaines parties
           étaient assez complexes lorsque j'ai entamé ce projet. Ainsi, les
           animations et la compatibilité avec les appareils de différentes
@@ -78,12 +78,13 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             >sélecteur de couleurs, la possibilité pour l'utilisateur d'ajouter
             des images, et enfin, j'ai reproduit une galerie de photos trouvée
             sur Dribbble</b
-          >. <br />En parallèle de ces ajouts, j'ai élaboré une présentation
-          comprenant une barre de navigation, des titres, et j'ai également
-          intégré un court texte de présentation. Jusqu'à présent, j'ai
-          principalement travaillé sur ce projet en mode desk, ce qui signifie
-          qu'il est optimisé pour des écrans d'au moins 1200&nbsp;pixels de
-          large. Dans l'avenir, j'aimerai le rendre responsive.
+          >. <br /><br />En parallèle de ces ajouts, j'ai élaboré une
+          présentation comprenant une barre de navigation, des titres, et j'ai
+          également intégré un court texte de présentation. Jusqu'à présent,
+          j'ai principalement travaillé sur ce projet en mode desk, ce qui
+          signifie qu'il est optimisé pour des écrans d'au moins
+          1200&nbsp;pixels de large. Dans l'avenir, j'aimerai le rendre
+          responsive.
         </p>
       </ProjectsItem>
 
@@ -116,7 +117,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             class="link-text"
             >site Suzuki concession.</a
           >
-          <br />
+          <br /><br />
           Il est important de noter que rien n'est cliquable dans ce projet, car
           il s'agit d'une reproduction visuelle. De plus, il n'est pas encore
           pleinement responsive ; il est actuellement adapté aux écrans d'une
@@ -138,13 +139,12 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-bottom: 3rem; */
   z-index: 2;
   min-width: none;
 }
 #reals:target {
-  padding-top: 5rem;
-  margin-top: -2rem;
+  padding-top: 6.1rem;
+  margin-top: -3.1rem;
   /* padding-top: 6.1rem; */
   /* margin-top: -6.1rem; */
 }
@@ -162,24 +162,26 @@ template {
   justify-content: center;
   align-items: start;
   margin: 0.5rem 1rem 0rem 1rem;
+  padding-bottom: 2rem;
 }
 .titre {
   width: 100%;
   z-index: 1;
+  color: #fff;
 }
 /* .title-linear-background {
-  background: linear-gradient(to bottom, #ffffff 40%, #e05900 80%);
+  background: linear-gradient(
+    to bottom,
+
+    #ffffff 55%,
+    rgba(255, 255, 255, 0) 80%
+  );
   background-clip: text;
   color: transparent;
 } */
-.title-linear-background {
-  background: linear-gradient(to bottom, #ffffff 55%, #1c657c 80%);
-  background-clip: text;
-  color: transparent;
-}
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   font-weight: 600;
   padding: 0.3rem 3rem;
   color: white;
@@ -217,30 +219,32 @@ p {
 }
 @media (min-width: 471px) {
   #reals:target {
-    padding-top: 8rem;
-    margin-top: -5rem;
+    /* padding-top: 8rem; */
+    /* margin-top: -5rem; */
+    padding-top: 9.056rem;
+    margin-top: -3rem;
   }
 }
 @media (min-width: 768px) {
   .titre {
-    margin: 3rem 6rem 2rem 6rem;
+    /* margin: 3rem 6rem 2rem 6rem; */
   }
   #reals:target {
-    padding-top: 5.5rem;
+    padding-top: 8.5rem;
     margin-top: -5.5rem;
   }
 }
 @media (min-width: 1135px) {
   #reals {
-    padding: 3rem 2rem;
+    /* padding: 3rem 2rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   #reals:target {
-    padding-top: 4rem;
-    margin-top: -4rem;
+    padding-top: 6.8rem;
+    margin-top: -3.8rem;
   }
   /* .grid-projects {
     display: grid;
@@ -262,6 +266,7 @@ p {
 }
 @media (min-width: 1440px) {
   .flex-project {
+    margin: 0.5rem 0rem 0rem 0rem;
   }
 }
 </style>

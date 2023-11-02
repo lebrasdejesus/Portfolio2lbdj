@@ -114,12 +114,15 @@ import Footer from "./Footer.vue";
 
 <style scoped>
 #contact {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   background: linear-gradient(to bottom, #1c657c, #1c4856 50%, #1c4856 50%);
   /* background: linear-gradient(to bottom, #43be1e, #4a1c56 50%, #561c4c 50%); */
   width: 100%;
   position: relative;
   padding-top: 3rem;
-  /* padding-bottom: 3rem; */
+  padding-bottom: 3rem;
   height: 100vh;
   min-height: 950px;
 }
@@ -148,12 +151,7 @@ import Footer from "./Footer.vue";
   z-index: 1;
 }
 .title-linear-background {
-  background: linear-gradient(
-    to bottom,
-
-    #ffffff 55%,
-    #1c657c 80%
-  );
+  background: linear-gradient(to bottom, #ffffff 55%, #1c657c 80%);
   background-clip: text;
   color: transparent;
 }
@@ -443,8 +441,8 @@ ul {
   margin-top: -6rem;
 } */
 #contact:target {
-  padding-top: 6rem;
-  margin-top: -3rem;
+  padding-top: 5rem;
+  margin-top: 0rem;
 }
 .z-index {
   z-index: 3;
@@ -454,8 +452,8 @@ ul {
 }
 @media (min-width: 471px) {
   #contact:target {
-    padding-top: 6.8rem;
-    margin-top: -6.8rem;
+    padding-top: 8rem;
+    margin-top: 0rem;
   }
 }
 @media (min-width: 768px) {

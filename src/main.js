@@ -24,12 +24,15 @@ import Clipboard from "v-clipboard"
 // import ScrollAnimation from './directives/scrollanimation'
 
 import { MotionPlugin } from '@vueuse/motion'
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const app = createApp(App)
 
 app.use(router)
 app.use(Clipboard)
 app.use(MotionPlugin)
+AOS.init();
 app.mount('#app')
 /*
  Register the object here globally as directive,

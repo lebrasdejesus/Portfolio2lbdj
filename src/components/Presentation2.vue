@@ -34,6 +34,16 @@ const cvURL =
           >
             PRÉSENTATION
           </h2> -->
+          <!-- <h2
+            class="title-linear-background disappear"
+            data-scroll-section
+            data-scroll
+            data-scroll-repeat="true"
+            data-scroll-speed="1"
+            data-scroll-class="appear"
+          >
+            PRÉSENTATION
+          </h2> -->
           <h2 class="title-linear-background">PRÉSENTATION</h2>
         </div>
         <div class="prez-et-skills">
@@ -268,6 +278,13 @@ const cvURL =
   </div>
 </template>
 <style scoped>
+.disappear {
+  opacity: 0;
+  transition: opacity 5s;
+}
+.appear {
+  opacity: 1;
+}
 /* .hor {
   transform: translateX(-50rem);
   transition: transform 0.5s ease;

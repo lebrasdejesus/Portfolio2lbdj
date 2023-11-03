@@ -3,7 +3,6 @@ export default {
   data() {
     return {
       isExpanded: false,
-      // text: "Votre texte ici. Ceci est un texte qui sera masqué en overflow."
     };
   },
   methods: {
@@ -87,6 +86,7 @@ export default {
   width: auto;
   height: auto;
   padding-bottom: 4rem;
+  transition: height 5s; /* Ajoutez une transition à la propriété max-height */
 }
 .btn-continue {
   display: flex;
@@ -119,10 +119,11 @@ export default {
   color: #fff;
   align-items: center;
   cursor: pointer;
+  transform: rotate(0deg);
+  transition: 0.5s ease-out;
 }
 .btn-open-text.expanded {
   transform: rotate(180deg);
-  transition: 0.5s ease-out;
 }
 /* .retracte {
   height: 10rem;
@@ -138,10 +139,6 @@ h4 {
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
-/* h4:after {
-  content: " ↴";
-  color: #e05900;
-} */
 
 @media (min-width: 768px) {
   .item {
@@ -156,11 +153,6 @@ h4 {
   .img {
     height: fit-content;
   }
-  .section-texte {
-    /* margin-top: 0; */
-    /* max-width: 70%; */
-    /* transform: translateY(0); */
-  }
 }
 @media (min-width: 1135px) {
   .item {
@@ -169,15 +161,7 @@ h4 {
     /* margin-top: 1rem; */
     padding: 1.5rem 0;
     margin: 0 1rem;
-
-    /* max-width: 40rem; */
   }
-  h4:after {
-    content: "";
-  }
-  /* .section-texte:hover {
-    height: fit-content;
-  } */
 }
 @media (min-width: 1440px) {
 }

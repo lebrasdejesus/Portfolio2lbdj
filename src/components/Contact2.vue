@@ -24,7 +24,11 @@ import Footer from "./Footer.vue";
     <div class="titre">
       <h2 class="title-linear-background">CONTACT</h2>
     </div>
-    <div class="container-except-titre">
+    <div
+      class="container-except-titre"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div class="login-card-container">
         <p>Pour m'écrire vous pouvez :</p>
         <ul>
@@ -181,6 +185,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .login-card-container {
   /* min-height: 80vh; */
@@ -518,6 +523,9 @@ ul {
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  h2 {
+    font-size: 2.7rem;
   }
 }
 </style>

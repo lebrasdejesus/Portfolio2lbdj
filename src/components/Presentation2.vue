@@ -5,7 +5,7 @@ import PresentationItemSkills2 from "./PresentationItemSkills2.vue";
 // const locomotiveScroll = new LocomotiveScroll();
 
 const cvURL =
-  "https://lebrasdejesus.github.io/Portfolio/cvfchambinaud-public.pdf";
+  "https://lebrasdejesus.github.io/Portfolio/CV-F-Chambinaud-Inte-Dev_compressed.pdf";
 
 // setLocomotiveScroll() {
 //       new LocomotiveScroll({
@@ -44,9 +44,7 @@ const cvURL =
           >
             PRÉSENTATION
           </h2> -->
-          <h2 class="title-linear-background" data-aos="fade-left">
-            PRÉSENTATION
-          </h2>
+          <h2 class="title-linear-background">PRÉSENTATION</h2>
         </div>
         <div class="prez-et-skills">
           <div class="paves-textes">
@@ -61,7 +59,11 @@ const cvURL =
             </h3> -->
             <!-- <h3 v-scrollanimation>Qui suis-je ?</h3> -->
             <h3>Qui suis-je ?</h3>
-            <div class="section-texte" data-aos="fade-right">
+            <div
+              class="section-texte"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h4>Mon passé</h4>
               <p>
                 Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
@@ -79,7 +81,11 @@ const cvURL =
               </p>
             </div>
 
-            <div class="section-texte" data-aos="fade-right">
+            <div
+              class="section-texte"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h4>Ces temps-ci</h4>
               <p>
                 Début 2023, j’ai entamé ma reconversion dans l’univers du
@@ -95,7 +101,11 @@ const cvURL =
                 >
               </p>
             </div>
-            <div class="section-texte" data-aos="fade-right">
+            <div
+              class="section-texte"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h4>Mon futur</h4>
               <p>
                 Bien qu’encore débutante, j’ai à cœur de progresser et
@@ -118,7 +128,11 @@ const cvURL =
           <div class="super-container-hardSkills">
             <h3>Mes compétences</h3>
 
-            <div class="container-hardSkills-titre" data-aos="fade-left">
+            <div
+              class="container-hardSkills-titre"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <div class="titre-skills"><h4>Compétences techniques</h4></div>
               <div class="container-two-containers-hard-skills">
                 <div class="two-containers-hard-skills">
@@ -244,7 +258,11 @@ const cvURL =
                 </div>
               </div>
             </div>
-            <div class="container-hardSkills-titre" data-aos="fade-left">
+            <div
+              class="container-hardSkills-titre"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <div class="titre-skills"><h4>Savoir-être</h4></div>
               <div class="container-hardSkills">
                 <ul>
@@ -342,7 +360,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.3rem 3rem;
+  padding: 0.3rem 3rem 1rem 3rem;
   /* color: white; */
   /* background-color: #397a89; */
   /* border-radius: 0 3rem 3rem 0; */
@@ -684,7 +702,7 @@ button:hover a {
   }
   h2 {
     font-size: 2.7rem;
-    padding: 0.3rem 3rem;
+    padding: 0.3rem 3rem 1.8rem 3rem;
   }
   h3 {
     text-align: left;

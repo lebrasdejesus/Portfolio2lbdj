@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -11,34 +11,37 @@ export default {
     },
   },
 };
-</script>
+</script> -->
 
 <template>
   <div class="item">
     <div class="img">
       <slot name="image"></slot>
     </div>
-
-    <div class="section-texte" :class="{ expanded: isExpanded }">
-      <h4>
-        <slot name="sous-titre"></slot>
-      </h4>
-      <p class="content">
-        <slot></slot>
-      </p>
-      <div class="btn-continue">
-        <span
-          class="btn-open-text material-symbols-rounded"
-          @click="toggleExpansion"
-          :class="{ expanded: isExpanded }"
-        >
-          keyboard_double_arrow_down
-        </span>
-      </div>
-    </div>
+    <!-- <div class="wrap-text"> -->
+    <!-- <div class="section-texte" :class="{ expanded: isExpanded }"> -->
+    <slot name="wrap-text">
+      <!-- <h4> -->
+      <!-- <slot name="sous-titre"></slot> -->
+      <!-- </h4> -->
+      <!-- <p class="content"> -->
+      <!-- <slot name="texte"></slot> -->
+      <!-- </p> -->
+      <!-- <div class="btn-continue">
+          <span
+            class="btn-open-text material-symbols-rounded"
+            @click="toggleExpansion"
+            :class="{ expanded: isExpanded }"
+          >
+            keyboard_double_arrow_down
+          </span>
+        </div> -->
+    </slot>
+    <!-- </div> -->
+    <!-- </div> -->
   </div>
 </template>
-  
+
   <style scoped>
 .item {
   /* display: grid;
@@ -62,39 +65,50 @@ export default {
   flex: 1;
   margin-top: 0.8rem;
 } */
+/* .grid-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  height: 15rem;
+
+  transition: grid-template-rows 500ms;
+} */
+/* .grid-expand.expanded {
+  grid-template-rows: 1fr;
+  padding-bottom: 4rem;
+} */
 .section-texte {
-  display: flex;
   /* flex: 1; */
+  /* display: flex;
   flex-direction: column;
   justify-content: start;
-  /* align-items: start; */
-  /* justify-content: center; */
-  align-items: center;
+  align-items: center; */
   background-color: #fff;
   /* margin: 0.5rem 0 2rem 0; */
   /* margin: 0 0 2rem 0; */
+  display: grid;
+  grid-template-rows: 0fr;
   padding: 2rem;
   border-top: 5px solid #e05900;
   border-bottom: 5px solid #e05900;
   transform: translateY(-0.4rem);
-  height: 15rem;
   overflow: hidden;
+  height: 15rem;
   position: relative;
-  transition: height 5s; /* Ajoutez une transition à la propriété max-height */
+  transition: height 0.4s ease-out;
 }
 .section-texte.expanded {
   width: auto;
-  height: auto;
+  grid-template-rows: 1fr;
+  height: 30rem;
   padding-bottom: 4rem;
-  transition: height 5s; /* Ajoutez une transition à la propriété max-height */
 }
-.btn-continue {
+
+/* .btn-continue {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   bottom: 0rem;
-  /* background-color: rgba(255, 255, 255, 0.8); */
   background: linear-gradient(
     to top,
     rgba(255, 255, 255, 1) 0%,
@@ -110,8 +124,6 @@ export default {
   height: 3.2rem;
   display: flex;
   justify-content: center;
-  /* align-items: flex-start; */
-  /* background-color: #d35400; */
   border-radius: 10rem;
   background-color: #e05900;
   box-shadow: #838e93 0rem 0rem 0.7rem;
@@ -124,7 +136,7 @@ export default {
 }
 .btn-open-text.expanded {
   transform: rotate(180deg);
-}
+} */
 /* .retracte {
   height: 10rem;
   overflow: hidden;
@@ -132,13 +144,6 @@ export default {
 .visible {
   height: fit-content;
 } */
-h4 {
-  padding: 0 0 0.8rem 0;
-  font-weight: 700;
-  font-size: 1.1rem;
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-}
 
 @media (min-width: 768px) {
   .item {
@@ -162,7 +167,5 @@ h4 {
     padding: 1.5rem 0;
     margin: 0 1rem;
   }
-}
-@media (min-width: 1440px) {
 }
 </style>

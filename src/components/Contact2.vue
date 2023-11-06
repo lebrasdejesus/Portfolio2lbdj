@@ -107,13 +107,13 @@ import Footer from "./Footer.vue";
       </div>
 
       <div class="btn-return">
-        <a href="#head"
-          ><button class="btn-carre">
+        <a href="#head">
+          <button class="btn-carre">
             <span class="material-symbols-rounded">
               keyboard_double_arrow_up
             </span>
-          </button></a
-        >
+          </button>
+        </a>
       </div>
     </div>
     <div class="z-index">
@@ -434,9 +434,9 @@ ul {
   /* align-items: center; */
   width: 100%;
   position: absolute;
-  bottom: 5.5rem;
+  bottom: -3rem;
   right: 1.5rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 .btn-carre {
   width: 3.2rem;
@@ -444,6 +444,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  z-index: 4;
 }
 .hover-list {
   font-weight: 600;

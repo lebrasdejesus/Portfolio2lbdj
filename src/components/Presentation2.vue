@@ -66,9 +66,9 @@ const cvURL =
             >
               <h4>Mon passé</h4>
               <p>
-                Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
+                Je suis ravie de vous accueillir sur mon portfolio ! Il conjugue
                 mon expérience professionnelle et ma passion naissante pour le
-                développement web !
+                développement web.
                 <b>
                   <br />
                   <br />
@@ -89,15 +89,15 @@ const cvURL =
               <h4>Ces temps-ci</h4>
               <p>
                 Début 2023, j’ai entamé ma reconversion dans l’univers du
-                développement Web, où le graphisme rencontre le code. Pendant 4
+                développement web, où le graphisme rencontre le code. Pendant 4
                 mois, j’ai suivi à temps complet la
                 <b>formation «&nbsp;Développeur .NET fullstack&nbsp;»</b> chez
-                M2i, qui s’est ensuite conclue par un stage en juin.
+                M2i, qui s’est ensuite conclue par un mois de stage, en juin.
                 <br /><br />Mon portfolio est justement là pour vous montrer les
                 quelques
                 <b
-                  >projets (orientés Intégration&nbsp;/ Front) accomplis pendant
-                  ce mois.</b
+                  >projets (orientés intégration&nbsp;/ front) accomplis pendant
+                  mon stage.</b
                 >
               </p>
             </div>
@@ -109,13 +109,13 @@ const cvURL =
               <h4>Mon futur</h4>
               <p>
                 Bien qu’encore débutante, j’ai à cœur de progresser et
-                d’apprendre tous les jours un peu plus&nbsp;: j’ai décidé de
-                continuer mon apprentissage avec la <b>3W Academy</b>, au rythme
-                de 3 semaines en entreprise et une semaine en cours. Je
+                d’apprendre tous les jours un peu plus. J’ai d'ailleurs décidé
+                de continuer mon apprentissage avec la <b>3W Academy</b>, au
+                rythme de 3 semaines en entreprise et une semaine en cours. Je
                 recherche donc un
                 <b
-                  >contrat en alternance d’Intégratrice et/ou Développeuse
-                  Front-End</b
+                  >contrat en alternance d’intégratrice et/ou développeuse
+                  front-end</b
                 >
                 sur la métropole lilloise. <br /><br />N’hésitez pas à me
                 <a href="#contact" class="link-text"><b>contacter</b></a> si mon
@@ -384,7 +384,7 @@ h3 {
   /* text-align: left; */
   padding: 0.3rem 3rem;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
@@ -403,7 +403,7 @@ h4 {
   align-items: start; */
   padding: 0 0 0.8rem 0;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #e05900;
   font-family: "Montserrat", sans-serif;
 }
@@ -707,16 +707,8 @@ button:hover a {
   h3 {
     text-align: left;
     padding: 0.3rem 3rem;
-    font-size: 1.4rem;
   }
-  h4 {
-    /* text-align: left; */
-    /* display: flex;
-  justify-content: left;
-  align-items: start; */
-    /* padding: 0 0 0.8rem 0; */
-    font-size: 1.1rem;
-  }
+
   .prez-et-skills {
     display: flex;
     flex-direction: row;

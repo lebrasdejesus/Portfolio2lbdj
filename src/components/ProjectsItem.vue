@@ -129,7 +129,7 @@ export default {
 h4 {
   padding: 0 0 0.8rem 0;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }

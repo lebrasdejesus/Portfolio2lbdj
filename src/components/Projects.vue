@@ -1,6 +1,7 @@
 <script setup>
 // ca marche mais je n'ai pas encore mis la transition sur les blocs textes quand ils s'agrandissent
 import ProjectsItem from "./ProjectsItem.vue";
+import ImgPortfolio1 from "./icons/ImgPortfolio1.vue";
 import ImgLakson from "./icons/ImgLakson.vue";
 import ImgProjet2 from "./icons/ImgProjet2.vue";
 import ImgSuzuki from "./icons/ImgSuzuki.vue";
@@ -13,6 +14,33 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
       <h2 class="title-linear-background">RÉALISATIONS</h2>
     </div>
     <div class="grid-projects flex-project">
+      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
+        <template #image>
+          <ImgPortfolio1 />
+        </template>
+        <template #sous-titre
+          ><a
+            href="https://14h02m10s.github.io/Portfolio/"
+            target="blank"
+            class="link-text"
+            >Première version de mon portfolio&nbsp;</a
+          ><a href="https://14h02m10s.github.io/Portfolio/" target="blank"
+            ><img
+              src="../assets/external-orange.svg"
+              class="picto-external-link"
+              alt="picto-external-link" /></a
+        ></template>
+        <p>
+          Voici la première version de mon portfolio... je n'ai pas eu le temps
+          de le diffuser car dès qu'il a été fini, j'ai sollicité mon entourage
+          pour des avis, et certains retours pointaient du doigt le fait que mon
+          site etait trop "statique", et un peu trop "print" (déformation
+          professionnelle j'ai envie de dire ! :p). <br /><br />C'etait mon
+          premier projet responsive, élaboré en mobile first. Je souhaitais
+          vraiment faire le parallèle avec mon cv, notamment en gardant la mise
+          en forme des titres.
+        </p>
+      </ProjectsItem>
       <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
         <template #image>
           <ImgLakson />
@@ -28,14 +56,15 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             target="blank"
             ><img
               src="../assets/external-orange.svg"
-              class="picto-external-link" /></a
+              class="picto-external-link"
+              alt="picto-external-link" /></a
         ></template>
         <p>
           Ceci est le projet <b>Vue.js</b> le plus abouti que j'ai réalisé (en
-          dehors de ce portfolio). J'ai commencé ce projet à la fin de mon
-          stage, en juin 2023, et l'ai donc continué chez moi. L'objectif
-          principal était de reproduire un site vitrine déjà existant. Mon choix
-          s'est porté sur
+          dehors de ce portfolio + sa 1ère version). J'ai commencé ce projet à
+          la fin de mon stage, en juin 2023, et l'ai donc continué chez moi.
+          L'objectif principal était de reproduire un site vitrine déjà
+          existant. Mon choix s'est porté sur
           <a href="https://lakson.fr/" target="_blank" class="link-text"
             >le site du restaurant Lakson,</a
           >
@@ -67,7 +96,8 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
           ><a href="https://14h02m10s.github.io/TestVue-14h/" target="blank"
             ><img
               src="../assets/external-orange.svg"
-              class="picto-external-link" /></a
+              class="picto-external-link"
+              alt="picto-external-link" /></a
         ></template>
         <p>
           J'ai décidé de me lancer dans la création de projets en <b>Vue.js</b>,
@@ -82,10 +112,9 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
           >. <br /><br />En parallèle de ces ajouts, j'ai élaboré une
           présentation comprenant une barre de navigation, des titres, et j'ai
           également intégré un court texte de présentation. Jusqu'à présent,
-          j'ai principalement travaillé sur ce projet en mode desk, ce qui
-          signifie qu'il est optimisé pour des écrans d'au moins
-          1200&nbsp;pixels de large. Dans l'avenir, j'aimerai le rendre
-          responsive.
+          j'ai uniquement travaillé sur ce projet en mode desk, ce qui signifie
+          qu'il est optimisé pour des écrans d'au moins 1200&nbsp;pixels de
+          large. Dans l'avenir, j'aimerai le rendre responsive.
         </p>
       </ProjectsItem>
 
@@ -105,6 +134,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
             ><img
               src="../assets/external-orange.svg"
               class="picto-external-link"
+              alt="picto-external-link"
           /></a>
           <!-- <span @click="toggleTexte">&nbsp;↴</span> -->
         </template>

@@ -13,7 +13,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
       <h2 class="title-linear-background">RÉALISATIONS</h2>
     </div>
     <div class="grid-projects flex-project">
-      <ProjectsItem>
+      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
         <template #image>
           <ImgLakson />
         </template>
@@ -54,7 +54,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
         </p>
       </ProjectsItem>
 
-      <ProjectsItem>
+      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
         <template #image>
           <ImgProjet2 />
         </template>
@@ -89,7 +89,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
         </p>
       </ProjectsItem>
 
-      <ProjectsItem>
+      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
         <template #image>
           <ImgSuzuki />
         </template>

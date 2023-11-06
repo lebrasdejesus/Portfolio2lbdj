@@ -59,7 +59,11 @@ const cvURL =
             </h3> -->
             <!-- <h3 v-scrollanimation>Qui suis-je ?</h3> -->
             <h3>Qui suis-je ?</h3>
-            <div class="section-texte">
+            <div
+              class="section-texte"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h4>Mon passé</h4>
               <p>
                 Je suis ravie de vous accueillir sur mon portfolio, qui conjugue
@@ -77,7 +81,11 @@ const cvURL =
               </p>
             </div>
 
-            <div class="section-texte">
+            <div
+              class="section-texte"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h4>Ces temps-ci</h4>
               <p>
                 Début 2023, j’ai entamé ma reconversion dans l’univers du
@@ -93,7 +101,11 @@ const cvURL =
                 >
               </p>
             </div>
-            <div class="section-texte">
+            <div
+              class="section-texte"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h4>Mon futur</h4>
               <p>
                 Bien qu’encore débutante, j’ai à cœur de progresser et
@@ -116,7 +128,11 @@ const cvURL =
           <div class="super-container-hardSkills">
             <h3>Mes compétences</h3>
 
-            <div class="container-hardSkills-titre">
+            <div
+              class="container-hardSkills-titre"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <div class="titre-skills"><h4>Compétences techniques</h4></div>
               <div class="container-two-containers-hard-skills">
                 <div class="two-containers-hard-skills">
@@ -242,7 +258,11 @@ const cvURL =
                 </div>
               </div>
             </div>
-            <div class="container-hardSkills-titre">
+            <div
+              class="container-hardSkills-titre"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <div class="titre-skills"><h4>Savoir-être</h4></div>
               <div class="container-hardSkills">
                 <ul>

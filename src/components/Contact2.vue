@@ -105,16 +105,15 @@ import Footer from "./Footer.vue";
       <div class="container-btn-envoyer">
         <button type="submit" class="btn">Envoyer</button>
       </div>
-
-      <div class="btn-return">
-        <a href="#head">
-          <button class="btn-carre">
-            <span class="material-symbols-rounded">
-              keyboard_double_arrow_up
-            </span>
-          </button>
-        </a>
-      </div>
+    </div>
+    <div class="btn-return">
+      <a href="#head">
+        <button class="btn-carre">
+          <span class="material-symbols-rounded">
+            keyboard_double_arrow_up
+          </span>
+        </button>
+      </a>
     </div>
     <div class="z-index">
       <Footer />
@@ -434,7 +433,7 @@ ul {
   /* align-items: center; */
   width: 100%;
   position: absolute;
-  bottom: -3rem;
+  bottom: 5.5rem;
   right: 1.5rem;
   /* padding-top: 2rem; */
 }

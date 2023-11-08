@@ -7,22 +7,22 @@
         data-scroll-repeat="true"
         data-scroll-speed="-1"
       >
-        <!-- <Transition appear name="slide-fade1"> -->
-        <div class="bienvenue">BIENVENUE</div>
-        <!-- </Transition> -->
-        <!-- <Transition appear name="slide-fade2"> -->
-        <div class="portfolio">sur mon portfolio</div>
-        <!-- </Transition> -->
+        <Transition appear name="slide-fade1">
+          <div class="bienvenue">BIENVENUE</div>
+        </Transition>
+        <Transition appear name="slide-fade2">
+          <div class="portfolio">sur mon portfolio</div>
+        </Transition>
       </div>
-      <!-- <transition appear name="photo-fade"> -->
-      <div class="container-photo" data-scroll data-scroll-speed="-1">
-        <img
-          src="../assets/profil-carre-222.jpg"
-          alt="photo profil"
-          class="photo2"
-        />
-      </div>
-      <!-- </transition> -->
+      <transition appear name="photo-fade">
+        <div class="container-photo" data-scroll data-scroll-speed="-1">
+          <img
+            src="../assets/profil-carre-222.jpg"
+            alt="photo profil"
+            class="photo2"
+          />
+        </div>
+      </transition>
     </div>
     <div class="btn-continue">
       <a href="#head">
@@ -113,7 +113,7 @@
 
 .slide-fade1-enter-from,
 .slide-fade2-enter-from {
-  /* transform: translateX(-10rem); */
+  transform: translateX(-10rem);
   opacity: 0;
 }
 /* .slide-fade1-enter-to,

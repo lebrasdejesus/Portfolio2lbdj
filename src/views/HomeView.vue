@@ -3,8 +3,8 @@
 import Header5 from "../components/Header5.vue";
 import First2 from "../components/First2.vue";
 // import testLocomotive from "../components/testLocomotive.vue";
-// import Presentation2 from "../components/Presentation2.vue";
-// import Projects from "../components/Projects.vue";
+import Presentation2 from "../components/Presentation2.vue";
+import Projects from "../components/Projects.vue";
 // import Contact from "../components/Contact.vue";
 import Contact2 from "../components/Contact2.vue";
 // import Footer from "../components/Footer.vue";
@@ -25,8 +25,8 @@ onMounted(() => {
     <Header5 />
     <First2 />
     <!-- <testLocomotive /> -->
-    <!-- <Presentation2 /> -->
-    <!-- <Projects /> -->
+    <Presentation2 />
+    <Projects />
     <Contact2 />
     <!-- <Footer /> -->
   </main>

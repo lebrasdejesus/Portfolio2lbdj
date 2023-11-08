@@ -2,22 +2,22 @@
   <div class="englobeur-first">
     <div class="text-photo">
       <div class="text">
-        <!-- <Transition appear name="slide-fade1"> -->
-        <div class="name">Bienvenue</div>
-        <!-- </Transition> -->
-        <!-- <Transition appear name="slide-fade2"> -->
-        <div class="name">sur mon portfolio</div>
-        <!-- </Transition> -->
+        <Transition appear name="slide-fade1">
+          <div class="name">Bienvenue</div>
+        </Transition>
+        <Transition appear name="slide-fade2">
+          <div class="name">sur mon portfolio</div>
+        </Transition>
       </div>
-      <!-- <transition appear name="photo-fade"> -->
-      <div class="container-photo">
-        <img
-          src="../assets/profil-carre-222.jpg"
-          alt="photo profil"
-          class="photo2"
-        />
-      </div>
-      <!-- </transition> -->
+      <transition appear name="photo-fade">
+        <div class="container-photo">
+          <img
+            src="../assets/profil-carre-222.jpg"
+            alt="photo profil"
+            class="photo2"
+          />
+        </div>
+      </transition>
       <!-- <div class="vide"></div> -->
     </div>
     <div class="btn-continue">
@@ -72,12 +72,12 @@
   width: 14rem;
   border-radius: 10rem;
 }
-/* .photo-fade-enter-active {
+.photo-fade-enter-active {
   transition: all 1.5s ease-out;
 }
 .photo-fade-enter-from {
   opacity: 0;
-} */
+}
 .text {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -98,10 +98,12 @@
   padding: 0.6rem 2rem 0.6rem 3rem;
   transform: translateX(-1rem);
 }
-/* .slide-fade1-enter-active {
+.slide-fade1-enter-active {
+  /* transition: all 1s ease; */
   transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .slide-fade2-enter-active {
+  /* transition: all 1s ease; */
   transition: all 1.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition-delay: 0.6s;
 }
@@ -114,7 +116,7 @@
 .slide-fade1-enter-to,
 .slide-fade2-enter-to {
   transform: translateX(-1rem);
-} */
+}
 button,
 button::after {
   -webkit-transition: all 0.3s;

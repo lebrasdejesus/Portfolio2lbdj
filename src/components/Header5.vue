@@ -135,7 +135,7 @@ h1 {
   /* float: none; */
   display: none;
 }
-@media (min-width: 471px) {
+@media (min-width: 600px) {
   .container1 {
     box-shadow: 0px 5px 10px rgba(37, 37, 37, 0.3);
     /* height: 96.9px; */

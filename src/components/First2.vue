@@ -51,6 +51,7 @@
   background-color: rgba(17, 96, 113, 0.5);
   background-size: cover;
   background-position: bottom 0px right 0px; */
+  overflow: hidden;
 }
 .text-photo {
   gap: 3rem;
@@ -59,6 +60,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  overflow: hidden;
 }
 /* .container-photo {
   height: 14rem;

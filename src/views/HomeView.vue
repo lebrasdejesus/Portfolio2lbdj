@@ -1,7 +1,7 @@
 <script setup>
 // import Header4 from "../components/Header4.vue";
 import Header5 from "../components/Header5.vue";
-import First2 from "../components/First2.vue";
+import First from "../components/First.vue";
 // import testLocomotive from "../components/testLocomotive.vue";
 import Presentation2 from "../components/Presentation2.vue";
 import Projects from "../components/Projects.vue";
@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
   <main data-scroll-container>
     <Header5 />
-    <First2 />
+    <First />
     <!-- <testLocomotive /> -->
     <Presentation2 />
     <Projects />

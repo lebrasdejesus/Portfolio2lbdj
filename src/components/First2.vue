@@ -88,6 +88,7 @@
   border-bottom: #e05900 4px solid;
   padding-top: 1.2rem;
   border-top: #e05900 4px solid;
+  overflow: hidden;
 }
 .bienvenue {
   color: #ffffff;

@@ -135,10 +135,9 @@ h1 {
   /* float: none; */
   display: none;
 }
-@media (min-width: 600px) {
+/* @media (min-width: 471px) {
   .container1 {
     box-shadow: 0px 5px 10px rgba(37, 37, 37, 0.3);
-    /* height: 96.9px; */
     height: 6.056rem;
   }
   nav {
@@ -175,7 +174,7 @@ h1 {
     display: flex;
     flex-direction: row;
   }
-}
+} */
 @media (min-width: 768px) {
   .container1 {
     display: grid;

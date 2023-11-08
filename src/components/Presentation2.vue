@@ -490,6 +490,7 @@ a {
   /* box-shadow: inset 0.6rem 0.6rem #397a89,
     0.3rem 0.3rem 0.5rem rgba(57, 122, 137, 0.2); */
   width: 100%;
+  overflow: hidden;
 
   /* border-top: 5px solid #e05900;
     border-bottom: 5px solid #e05900; */
@@ -643,6 +644,7 @@ button:hover a {
     margin: 1rem auto;
     padding: 0;
     width: 44rem;
+    overflow: hidden;
   }
   .super-container-hardSkills {
     display: flex;

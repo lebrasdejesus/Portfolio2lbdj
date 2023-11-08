@@ -51,7 +51,6 @@
   background-color: rgba(17, 96, 113, 0.5);
   background-size: cover;
   background-position: bottom 0px right 0px; */
-  overflow: hidden;
 }
 .text-photo {
   gap: 3rem;
@@ -60,7 +59,6 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  overflow: hidden;
 }
 /* .container-photo {
   height: 14rem;
@@ -90,7 +88,6 @@
   border-bottom: #e05900 4px solid;
   padding-top: 1.2rem;
   border-top: #e05900 4px solid;
-  overflow: hidden;
 }
 .bienvenue {
   color: #ffffff;

@@ -100,10 +100,10 @@ import Footer from "./Footer.vue";
           <div class="form-item">
             <textarea id="message" name="message" required></textarea>
           </div>
+          <div class="container-btn-envoyer">
+            <button type="submit" class="btn">Envoyer</button>
+          </div>
         </form>
-      </div>
-      <div class="container-btn-envoyer">
-        <button type="submit" class="btn">Envoyer</button>
       </div>
     </div>
     <div class="btn-return">

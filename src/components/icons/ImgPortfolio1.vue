@@ -1,9 +1,6 @@
 <template>
   <div class="height">
-    <a
-      href="https://14h02m10s.github.io/ExerciceCopieSiteResto/#/"
-      target="blank"
-    >
+    <a href="https://14h02m10s.github.io/Portfolio/" target="blank">
       <img
         src="../../assets/ImgPortfolio1-orange.jpg"
         alt="Miniature Portfolio1 NB"

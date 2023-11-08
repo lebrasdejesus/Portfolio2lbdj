@@ -35,10 +35,11 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
           de le diffuser car dès qu'il a été fini, j'ai sollicité mon entourage
           pour des avis, et certains retours pointaient du doigt le fait que mon
           site etait trop "statique", et un peu trop "print" (déformation
-          professionnelle j'ai envie de dire ! :p). <br /><br />C'etait mon
-          premier projet responsive, élaboré en mobile first. Je souhaitais
-          vraiment faire le parallèle avec mon cv, notamment en gardant la mise
-          en forme des titres.
+          professionnelle j'ai envie de dire ! :p). <br /><br /><b
+            >C'etait mon premier projet responsive, élaboré en mobile first.</b
+          >
+          Je souhaitais vraiment faire le parallèle avec mon cv, notamment en
+          gardant la mise en forme des titres.
         </p>
       </ProjectsItem>
       <ProjectsItem data-aos="fade-up" data-aos-duration="2000">

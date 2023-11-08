@@ -119,8 +119,8 @@
 }
 .slide-fade2-enter-active {
   /* transition: all 1s ease; */
-  transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
-  transition-delay: 0.6s;
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: 0.4s;
 }
 
 .slide-fade1-enter-from,

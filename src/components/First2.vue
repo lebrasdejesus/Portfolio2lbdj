@@ -7,22 +7,22 @@
         data-scroll-repeat="true"
         data-scroll-speed="-1"
       >
-        <Transition appear name="slide-fade1">
-          <div class="bienvenue">BIENVENUE</div>
-        </Transition>
-        <Transition appear name="slide-fade2">
-          <div class="portfolio">sur mon portfolio</div>
-        </Transition>
+        <!-- <Transition appear name="slide-fade1"> -->
+        <div class="bienvenue">BIENVENUE</div>
+        <!-- </Transition> -->
+        <!-- <Transition appear name="slide-fade2"> -->
+        <div class="portfolio">sur mon portfolio</div>
+        <!-- </Transition> -->
       </div>
-      <transition appear name="photo-fade">
-        <div class="container-photo" data-scroll data-scroll-speed="-1">
-          <img
-            src="../assets/profil-carre-222.jpg"
-            alt="photo profil"
-            class="photo2"
-          />
-        </div>
-      </transition>
+      <!-- <transition appear name="photo-fade"> -->
+      <div class="container-photo" data-scroll data-scroll-speed="-1">
+        <img
+          src="../assets/profil-carre-222.jpg"
+          alt="photo profil"
+          class="photo2"
+        />
+      </div>
+      <!-- </transition> -->
     </div>
     <div class="btn-continue">
       <a href="#head">
@@ -98,34 +98,22 @@
   /* padding: 0.6rem 2rem 0.6rem 3rem; */
   /* transform: translateX(-1rem); */
 }
-/* .bienvenue::before {
-  content: none;
-  background-color: #ae1d1d;
-  width: 200px;
-  height: 15px;
-  transform: translateY(-1rem);
-} */
 .portfolio {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.75rem;
-  /* text-align: right; */
-  /* padding: 0.6rem 2rem 0.6rem 3rem; */
-  /* transform: translateX(-1rem); */
 }
 .slide-fade1-enter-active {
-  /* transition: all 1s ease; */
   transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .slide-fade2-enter-active {
-  /* transition: all 1s ease; */
   transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition-delay: 0.4s;
 }
 
 .slide-fade1-enter-from,
 .slide-fade2-enter-from {
-  transform: translateX(-10rem);
+  /* transform: translateX(-10rem); */
   opacity: 0;
 }
 /* .slide-fade1-enter-to,

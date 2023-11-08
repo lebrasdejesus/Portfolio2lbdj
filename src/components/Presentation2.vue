@@ -62,7 +62,7 @@ const cvURL =
             <div
               class="section-texte"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="600"
             >
               <h4>Mon passé</h4>
               <p>
@@ -84,7 +84,7 @@ const cvURL =
             <div
               class="section-texte"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="600"
             >
               <h4>Ces temps-ci</h4>
               <p>
@@ -104,7 +104,7 @@ const cvURL =
             <div
               class="section-texte"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="600"
             >
               <h4>Mon futur</h4>
               <p>
@@ -131,7 +131,7 @@ const cvURL =
             <div
               class="container-hardSkills-titre"
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="600"
             >
               <div class="titre-skills"><h4>Compétences techniques</h4></div>
               <div class="container-two-containers-hard-skills">
@@ -261,7 +261,7 @@ const cvURL =
             <div
               class="container-hardSkills-titre"
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="600"
             >
               <div class="titre-skills"><h4>Savoir-être</h4></div>
               <div class="container-hardSkills">
@@ -623,10 +623,10 @@ button:hover a {
 }
 
 @media (min-width: 471px) {
-  #head:target {
+  /* #head:target {
     padding-top: 9rem;
     margin-top: -9rem;
-  }
+  } */
 }
 @media (min-width: 768px) {
   #head:target {

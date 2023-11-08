@@ -479,14 +479,14 @@ ul {
   #contact {
     min-height: 1050px;
   }
-  #contact:target {
+  /* #contact:target {
     padding-top: 9.056rem;
     margin-top: 0rem;
-  }
+  } */
 }
 @media (min-width: 768px) {
   #contact {
-    max-height: 1250px;
+    /* max-height: 1250px; */
     /* justify-content: center; */
   }
   #contact:target {

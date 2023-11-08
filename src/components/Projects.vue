@@ -14,7 +14,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
       <h2 class="title-linear-background">RÉALISATIONS</h2>
     </div>
     <div class="grid-projects flex-project">
-      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
+      <ProjectsItem data-aos="fade-up" data-aos-duration="600">
         <template #image>
           <ImgPortfolio1 />
         </template>
@@ -42,7 +42,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
           gardant la mise en forme des titres.
         </p>
       </ProjectsItem>
-      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
+      <ProjectsItem data-aos="fade-up" data-aos-duration="600">
         <template #image>
           <ImgLakson />
         </template>
@@ -84,7 +84,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
         </p>
       </ProjectsItem>
 
-      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
+      <ProjectsItem data-aos="fade-up" data-aos-duration="600">
         <template #image>
           <ImgProjet2 />
         </template>
@@ -119,7 +119,7 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
         </p>
       </ProjectsItem>
 
-      <ProjectsItem data-aos="fade-up" data-aos-duration="2000">
+      <ProjectsItem data-aos="fade-up" data-aos-duration="600">
         <template #image>
           <ImgSuzuki />
         </template>
@@ -253,8 +253,8 @@ p {
   #reals:target {
     /* padding-top: 8rem; */
     /* margin-top: -5rem; */
-    padding-top: 9.056rem;
-    margin-top: -3rem;
+    /* padding-top: 9.056rem;
+    margin-top: -3rem; */
   }
 }
 @media (min-width: 768px) {

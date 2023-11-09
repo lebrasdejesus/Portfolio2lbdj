@@ -90,9 +90,9 @@ nav {
 }
 nav a {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.5rem 0.7rem;
+  padding: 1rem 0.7rem;
   border-left: 0px solid rgba(33, 157, 178, 0.3);
   color: white;
   transition: 0.4s;
@@ -110,17 +110,15 @@ nav a:first-of-type {
 }
 h1 {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: white;
 }
-.picto a {
-  padding: 0 0.5rem;
-}
+
 .picto img {
-  height: 1.8rem;
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
 }
 .picto img:hover {
   transform: scale(1.08);
@@ -129,14 +127,16 @@ h1 {
   /* background-color: #5bb6c6; */
   /* background-color: #397a89; */
   background-color: #1c657c;
+  padding: 1.5rem;
+
   /* box-shadow: 0px 5px 10px rgba(169, 169, 169, 0.5); */
 }
 .responsive a {
   /* float: none; */
   display: none;
 }
-/* @media (min-width: 471px) {
-  .container1 {
+@media (min-width: 471px) {
+  /* .container1 {
     box-shadow: 0px 5px 10px rgba(37, 37, 37, 0.3);
     height: 6.056rem;
   }
@@ -173,8 +173,11 @@ h1 {
   .picto {
     display: flex;
     flex-direction: row;
+  } */
+  h1 {
+    font-size: 1.2rem;
   }
-} */
+}
 @media (min-width: 768px) {
   .menu-points {
     display: none;
@@ -182,6 +185,15 @@ h1 {
   .picto {
     display: flex;
     flex-direction: row;
+  }
+  .picto a {
+    padding: 0 0.5rem;
+  }
+  .picto img {
+    height: 1.6rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
   nav a {
     padding: 0 0.7rem;
@@ -193,13 +205,12 @@ h1 {
     color: white;
     height: 5.5rem;
   }
-  nav {
+  /* nav {
     font-size: 1.3rem;
     padding: 1rem 0;
-  }
+  } */
   h1 {
     font-weight: 700;
-    font-size: 1.2rem;
     text-align: left;
     /* padding: 0.5rem; */
   }
@@ -207,12 +218,11 @@ h1 {
   .blue,
   .responsive {
     background-color: #1c657c;
-
+    padding: 0.9rem;
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    padding: 0.9rem;
   }
   .orange {
     display: flex;
@@ -220,10 +230,6 @@ h1 {
     justify-content: center;
     height: fit-content;
     height: 5.5rem;
-  }
-  .responsive a {
-    display: block;
-    font-size: 1.1rem;
   }
 }
 @media (min-width: 1135px) {

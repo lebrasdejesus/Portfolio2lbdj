@@ -231,6 +231,10 @@ h1 {
     height: fit-content;
     height: 5.5rem;
   }
+  .responsive a {
+    display: block;
+    font-size: 1.1rem;
+  }
 }
 @media (min-width: 1135px) {
   .container1 {

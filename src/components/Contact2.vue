@@ -96,12 +96,22 @@ import Footer from "./Footer.vue";
               required
             />
           </div>
-          <input
-            type="hidden"
-            name="_gotcha"
-            tabindex="-1"
-            autocomplete="off"
-          />
+          <div
+            style="
+              text-indent: -99999px;
+              white-space: nowrap;
+              overflow: hidden;
+              position: absolute;
+            "
+            aria-hidden="true"
+          >
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
           <div class="form-item">
             <textarea id="message" name="message" required></textarea>
           </div>

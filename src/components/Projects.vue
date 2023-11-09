@@ -283,7 +283,7 @@ p {
   }
   #reals:target {
     padding-top: 6.8rem;
-    margin-top: -3.8rem;
+    margin-top: -3.7rem;
   }
   /* .grid-projects {
     display: grid;
@@ -307,7 +307,7 @@ p {
 @media (min-width: 1440px) {
   .flex-project {
     /* justify-content: space-around; */
-    padding: 0 1rem 3rem 1rem;
+    padding: 0 1rem 2rem 1rem;
     margin: 0.5rem 0rem 0rem 0rem;
     width: 100%;
   }

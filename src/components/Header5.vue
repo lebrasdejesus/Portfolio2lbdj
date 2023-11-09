@@ -75,6 +75,7 @@ export default {
   padding: 0.8rem 1.5rem;
   text-align: left;
   height: 3.1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0.5rem 0.5rem 2rem;
 }
 .menu-points {
   height: 1.5rem;
@@ -128,8 +129,7 @@ h1 {
   /* background-color: #397a89; */
   background-color: #1c657c;
   padding: 1.5rem;
-
-  /* box-shadow: 0px 5px 10px rgba(169, 169, 169, 0.5); */
+  box-shadow: rgba(0, 0, 0, 0.3) 0.5rem 0.5rem 2rem;
 }
 .responsive a {
   /* float: none; */
@@ -204,6 +204,7 @@ h1 {
     grid-template-columns: 2fr 5fr;
     color: white;
     height: 5.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.5rem 0.5rem 2rem;
   }
   nav {
     /* font-size: 1.3rem; */
@@ -220,6 +221,7 @@ h1 {
     justify-content: center;
     height: fit-content;
     height: 5.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0.5rem 0.5rem 2rem;
   }
   .blue,
   .responsive {
@@ -229,6 +231,7 @@ h1 {
     flex-direction: row;
     justify-content: right;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0) 0.5rem 0.5rem 2rem;
   }
   .blue a,
   .responsive a {

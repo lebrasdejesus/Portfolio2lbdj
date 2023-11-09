@@ -50,7 +50,7 @@ export default {
   flex-direction: column;
   margin: 0;
   /* margin-top: 1rem; */
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   width: 100%;
 }
 .img {

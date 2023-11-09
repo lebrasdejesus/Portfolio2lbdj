@@ -298,13 +298,13 @@ const cvURL =
   </div>
 </template>
 <style scoped>
-.disappear {
+/* .disappear {
   opacity: 0;
   transition: opacity 5s;
 }
 .appear {
   opacity: 1;
-}
+} */
 /* .hor {
   transform: translateX(-50rem);
   transition: transform 0.5s ease;
@@ -687,7 +687,7 @@ button:hover a {
 @media (min-width: 1135px) {
   #head:target {
     padding-top: 6.8rem;
-    margin-top: -6.8rem;
+    margin-top: -6.6rem;
   }
   #head {
     display: flex;

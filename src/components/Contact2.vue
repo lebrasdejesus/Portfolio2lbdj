@@ -113,7 +113,12 @@ import Footer from "./Footer.vue";
             />
           </div>
           <div class="form-item">
-            <textarea id="message" name="message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Hello Fred, nous serions vraiment ravis de te compter parmi nous ! "
+              required
+            ></textarea>
           </div>
           <div class="container-btn-envoyer">
             <button type="submit" class="btn">Envoyer</button>

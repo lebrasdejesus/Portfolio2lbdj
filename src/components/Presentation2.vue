@@ -643,7 +643,8 @@ button:hover a {
     align-items: center;
     margin: 1rem auto;
     padding: 0;
-    width: 44rem;
+    width: 43rem;
+
     overflow: hidden;
   }
   .super-container-hardSkills {
@@ -653,7 +654,7 @@ button:hover a {
     align-items: center;
     /* width: fit-content; */
     /* padding: 2rem 6rem; */
-    width: 44rem;
+    width: 43rem;
   }
   .container-two-containers-hard-skills {
     display: flex;

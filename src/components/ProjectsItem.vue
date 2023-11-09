@@ -142,7 +142,7 @@ h4 {
     /* border: 1px rgba(208, 208, 208, 0.3) solid; */
     /* padding: 1.5rem 6rem; */
     padding: 1.5rem 0rem;
-    width: 44rem;
+    width: 43rem;
   }
   .img {
     height: fit-content;
@@ -153,8 +153,16 @@ h4 {
     /* grid-gap: 0.2rem; */
     /* border: 1px rgba(208, 208, 208, 0.8) solid; */
     /* margin-top: 1rem; */
-    padding: 1.5rem 0;
-    margin: 0 1rem;
+    /* padding: 1.5rem 0;
+    margin: 0 1rem; */
+  }
+}
+@media (min-width: 1440px) {
+  .item {
+    /* padding: 1.5rem 0;
+    margin: 0 1rem; */
+    /* padding: 1rem; */
+    margin: 0;
   }
 }
 </style>

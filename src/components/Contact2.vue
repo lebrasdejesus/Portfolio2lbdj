@@ -27,7 +27,7 @@ import Footer from "./Footer.vue";
     <div
       class="container-except-titre"
       data-aos="fade-up"
-      data-aos-duration="2000"
+      data-aos-duration="600"
     >
       <div class="login-card-container">
         <p>Pour m'écrire vous pouvez :</p>

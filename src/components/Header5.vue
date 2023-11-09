@@ -176,6 +176,17 @@ h1 {
   }
 } */
 @media (min-width: 768px) {
+  .menu-points {
+    display: none;
+  }
+  .picto {
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    padding: 0 0.7rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
   .container1 {
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -192,8 +203,11 @@ h1 {
     text-align: left;
     /* padding: 0.5rem; */
   }
+
   .blue,
   .responsive {
+    background-color: #1c657c;
+
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -214,10 +228,14 @@ h1 {
 }
 @media (min-width: 1135px) {
   .container1 {
-    height: 3.8rem;
+    height: 3.7rem;
   }
   .orange {
-    height: 3.8rem;
+    height: 3.7rem;
+  }
+  .blue,
+  .responsive {
+    height: 3.7rem;
   }
 }
 </style>

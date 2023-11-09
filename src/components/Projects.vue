@@ -31,15 +31,21 @@ import ImgSuzuki from "./icons/ImgSuzuki.vue";
               alt="picto-external-link" /></a
         ></template>
         <p>
-          Voici la première version de mon portfolio... je n'ai pas eu le temps
-          de le diffuser car dès qu'il a été fini, j'ai sollicité mon entourage
-          pour des avis, et certains retours pointaient du doigt le fait que mon
-          site etait trop "statique", et un peu trop "print" (déformation
-          professionnelle j'ai envie de dire ! :p). <br /><br /><b
-            >C'etait mon premier projet responsive, élaboré en mobile first.</b
+          Voici la première version de mon portfolio créée avec <b>Vue.js</b>.
+          Je n'ai pas eu le temps de le diffuser car dès sa finalisation, j'ai
+          sollicité des avis auprès de mon entourage. Certains ont souligné que
+          mon site était un peu trop "statique" et avait des airs un peu trop
+          "print" (une déformation professionnelle, je suppose ! :p).
+          <br /><br /><b
+            >C'était mon premier projet responsive, conçu en adoptant une
+            approche "mobile first".</b
           >
-          Je souhaitais vraiment faire le parallèle avec mon cv, notamment en
-          gardant la mise en forme des titres.
+          Initialement, je souhaitais faire le parallèle avec mon cv, notamment
+          en conservant la mise en forme des titres. Cependant, cela s'est avéré
+          être plus un problème qu'une solution. La deuxième version de mon
+          portfolio (le site que vous parcourez en ce moment) n'est pas parfait,
+          bien sûr, mais j'espère que vous pourrez y reconnaître la
+          détermination que j'y ai investie.
         </p>
       </ProjectsItem>
       <ProjectsItem data-aos="fade-up" data-aos-duration="600">
@@ -273,6 +279,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
   #reals:target {
     padding-top: 6.8rem;
@@ -287,6 +294,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2rem;
   }
   h2 {
     font-size: 2.7rem;
@@ -298,7 +306,10 @@ p {
 }
 @media (min-width: 1440px) {
   .flex-project {
+    /* justify-content: space-around; */
+    padding: 0 1rem;
     margin: 0.5rem 0rem 0rem 0rem;
+    width: 100%;
   }
 }
 </style>

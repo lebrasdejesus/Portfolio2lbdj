@@ -140,12 +140,13 @@ import Footer from "./Footer.vue";
 #contact {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   background: linear-gradient(to bottom, #1c657c, #1c4856 50%, #1c4856 50%);
   /* background: linear-gradient(to bottom, #43be1e, #4a1c56 50%, #561c4c 50%); */
   width: 100%;
   position: relative;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
+  padding-top: 5.1rem;
   padding-bottom: 3rem;
   height: 100vh;
   min-height: 950px;
@@ -265,7 +266,6 @@ input[type="email"] {
 .form-item {
   width: 100%;
 }
-
 input:focus {
   background: white;
 }
@@ -478,12 +478,10 @@ ul {
   padding-top: 6rem;
   margin-top: -6rem;
 } */
-#contact:target {
-  /* padding-top: 5rem;
-  margin-top: 0rem; */
+/* #contact:target {
   padding-top: 6.1rem;
   margin-top: 0rem;
-}
+} */
 .z-index {
   z-index: 3;
   bottom: 0;
@@ -503,11 +501,12 @@ ul {
   #contact {
     /* max-height: 1250px; */
     /* justify-content: center; */
+    padding-top: 7.5rem;
   }
-  #contact:target {
+  /* #contact:target {
     padding-top: 9.056rem;
     margin-top: 0rem;
-  }
+  } */
   /* .login-card-form {
     max-width: 44rem;
   } */
@@ -527,11 +526,12 @@ ul {
   #contact {
     height: 100vh;
     /* justify-content: center; */
+    padding-top: 6.7rem;
   }
-  #contact:target {
+  /* #contact:target {
     padding-top: 7rem;
     margin-top: -5rem;
-  }
+  } */
   .container-except-titre {
     display: flex;
     flex-direction: column;

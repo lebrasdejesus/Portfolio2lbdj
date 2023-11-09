@@ -307,7 +307,7 @@ p {
 @media (min-width: 1440px) {
   .flex-project {
     /* justify-content: space-around; */
-    padding: 0 1rem;
+    padding: 0 1rem 3rem 1rem;
     margin: 0.5rem 0rem 0rem 0rem;
     width: 100%;
   }

@@ -31,7 +31,7 @@ export default {
       <a href="#contact" @click="toggleMenu"><p>Contact</p></a>
       <div class="picto">
         <a
-          href="https://github.com/14h02m10s"
+          href="https://github.com/14h02m10s?tab=repositories"
           target="_blank"
           @click="toggleMenu"
         >

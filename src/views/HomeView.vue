@@ -81,6 +81,8 @@ html.has-scroll-dragging {
   transform-origin: center right;
   transition: transform 0.3s, opacity 0.3s;
   opacity: 0;
+  /* ajout personnel du display none*/
+  display: none;
 }
 .c-scrollbar:hover {
   transform: scaleX(1.45);

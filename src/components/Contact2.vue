@@ -42,6 +42,17 @@ import Footer from "./Footer.vue";
               ><b>Linkedin</b></a
             >
           </li>
+
+          <li>
+            cliquer
+            <a
+              href="mailto:f.chambinaud@gmail.com"
+              target="_blank"
+              class="hover-list"
+              ><b>ici</b></a
+            >
+            pour ouvrir directement votre client de messagerie
+          </li>
           <li>
             copier mon adresse mail
             <span
@@ -50,6 +61,8 @@ import Footer from "./Footer.vue";
               class="hover-list"
               ><b>ici</b></span
             >
+            (si comme moi vous n'aimez ni les formulaires, ni les clients de
+            messagerie :p)
           </li>
         </ul>
         <p :class="{ copy: !isCopied, copied: isCopied }">C'est copié !</p>

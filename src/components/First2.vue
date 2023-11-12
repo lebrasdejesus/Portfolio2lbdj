@@ -5,7 +5,7 @@
         class="text"
         data-scroll
         data-scroll-repeat="true"
-        data-scroll-speed="-1"
+        data-scroll-speed="2"
       >
         <Transition appear name="slide-fade1">
           <div class="bienvenue">BIENVENUE</div>

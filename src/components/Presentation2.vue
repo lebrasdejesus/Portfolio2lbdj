@@ -93,8 +93,9 @@ const cvURL =
                 mois, j’ai suivi à temps complet la
                 <b>formation «&nbsp;Développeur .NET fullstack&nbsp;»</b> chez
                 M2i, qui s’est ensuite conclue par un mois de stage, en juin.
-                <br /><br />Mon portfolio est justement là pour vous montrer les
-                quelques
+                <br /><br /><b>Mon portfolio</b> (qui est le projet
+                <b>le plus aboutit</b>
+                pour l'instant) est là pour vous montrer les quelques
                 <b
                   >projets (orientés intégration&nbsp;/ front) accomplis pendant
                   mon stage.</b
@@ -213,7 +214,7 @@ const cvURL =
                           class="height100"
                         />
                       </template>
-                      <template #texte><p>Adobe Xd</p></template>
+                      <template #texte><p>Xd</p></template>
                     </PresentationItemSkills2>
                     <PresentationItemSkills2>
                       <template #image>
@@ -223,7 +224,7 @@ const cvURL =
                           class="height100"
                         />
                       </template>
-                      <template #texte><p>Adobe Indesign</p></template>
+                      <template #texte><p>Indesign</p></template>
                     </PresentationItemSkills2>
                     <PresentationItemSkills2>
                       <template #image>
@@ -233,7 +234,7 @@ const cvURL =
                           class="height100"
                         />
                       </template>
-                      <template #texte><p>Adobe Photoshop</p></template>
+                      <template #texte><p>Photoshop</p></template>
                     </PresentationItemSkills2>
                     <PresentationItemSkills2>
                       <template #image>
@@ -243,7 +244,7 @@ const cvURL =
                           class="height100"
                         />
                       </template>
-                      <template #texte><p>Adobe Illustrator</p></template>
+                      <template #texte><p>Illustrator</p></template>
                     </PresentationItemSkills2>
                     <PresentationItemSkills2>
                       <template #image>
@@ -270,7 +271,7 @@ const cvURL =
                   <li>Rigoureuse</li>
                   <li>Créative</li>
                   <li>Perséverante</li>
-                  <li>À l'écoute</li>
+                  <li>À l'écoute / empathique</li>
                   <li>Sens de l'organisation</li>
                   <li>Maîtrise avancée du français</li>
                 </ul>

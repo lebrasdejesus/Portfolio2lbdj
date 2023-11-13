@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   border-top: 5px solid #e05900;
+  line-height: 1rem;
 }
 p {
   color: white;
@@ -27,6 +28,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    line-height: 1.6rem;
   }
   p {
     font-size: 0.9rem;

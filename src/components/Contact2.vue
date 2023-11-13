@@ -165,9 +165,9 @@ import Footer from "./Footer.vue";
   position: relative;
   /* padding-top: 3rem; */
   padding-top: 5.1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4.1rem;
   height: 100vh;
-  min-height: 950px;
+  min-height: 1050px;
 }
 #contact::after {
   content: "";
@@ -227,7 +227,7 @@ h2 {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0rem 1.5rem;
   /* background-color: rgba(255, 255, 255, 0.5); */
   /* margin-top: 1rem; */
   /* margin: 1rem 1rem 0rem 1rem; */
@@ -459,6 +459,7 @@ ul {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  /* padding-bottom: 6rem; */
 }
 .btn-return {
   display: flex;

@@ -66,16 +66,15 @@ const cvURL =
             >
               <h4>Mon passé</h4>
               <p>
-                Je suis ravie de vous accueillir sur mon portfolio ! Il conjugue
-                mon expérience professionnelle et ma passion naissante pour le
-                développement web.
-                <b>
-                  <br />
-                  <br />
-                  J’ai en effet travaillé 20 ans en tant que maquettiste</b
-                >
-                au sein de diverses entreprises. J’y ai perfectionné mon sens du
-                détail, ainsi que ma capacité à produire des livrables à la fois
+                Je suis ravie de vous accueillir sur mon portfolio, un espace où
+                se rencontrent
+                <b>20 ans d'expérience en tant que maquettiste</b> et ma passion
+                naissante pour le développement web.
+                <br />
+                <br />
+                Au cours des deux dernières décennies passées au sein de
+                diverses entreprises, j'ai perfectionné mon sens du détail,
+                ainsi que ma capacité à produire des livrables à la fois
                 communicants, harmonieux et respectueux des différentes chartes
                 graphiques.
               </p>
@@ -93,13 +92,10 @@ const cvURL =
                 mois, j’ai suivi à temps complet la
                 <b>formation «&nbsp;Développeur .NET fullstack&nbsp;»</b> chez
                 M2i, qui s’est ensuite conclue par un mois de stage, en juin.
-                <br /><br /><b>Mon portfolio</b> (qui est le projet
-                <b>le plus aboutit</b>
-                pour l'instant) est là pour vous montrer les quelques
-                <b
-                  >projets (orientés intégration&nbsp;/ front) accomplis pendant
-                  mon stage.</b
-                >
+                <br /><br /><b>Mon portfolio, projet phare à ce stade,</b> met
+                en lumière les réalisations issues de cette période de stage,
+                principalement orientées vers l'intégration et le développement
+                front-end.
               </p>
             </div>
             <div
@@ -109,18 +105,23 @@ const cvURL =
             >
               <h4>Mon futur</h4>
               <p>
-                Bien qu’encore débutante, j’ai à cœur de progresser et
-                d’apprendre tous les jours un peu plus. J’ai d'ailleurs décidé
-                de continuer mon apprentissage avec la <b>3W Academy</b>, au
-                rythme de 3 semaines en entreprise et une semaine en cours. Je
-                recherche donc un
-                <b
-                  >contrat en alternance d’intégratrice et/ou développeuse
-                  front-end</b
-                >
-                sur la métropole lilloise. <br /><br />N’hésitez pas à me
+                Malgré ma récente immersion dans ce nouvel univers, j’ai à cœur
+                de progresser et d’apprendre tous les jours un peu plus. J’ai
+                d'ailleurs décidé de continuer mon apprentissage en alternance
+                avec la
+                <b>3W Academy</b>, au rythme de 3 semaines en entreprise et une
+                semaine en cours. <br /><br />
+                Je suis toujours très attirée par le domaine du graphisme et je
+                nourris le désir d'élargir mes compétences. Ainsi, je suis
+                ouverte à deux voies passionnantes :
+                <b>l'UX/UI </b>car j'ai pris conscience au fil des ans que c'est
+                un fondement essentiel d'un site ou d'une application mais aussi
+                <b>le rôle d'intégratrice développeuse front-end</b> qui serait
+                la continuité de mon métier initial de maquettiste.
+                <br /><br />N’hésitez pas à me
                 <a href="#contact" class="link-text"><b>contacter</b></a> si mon
-                profil vous intéresse&nbsp;!
+                profil vous intéresse (et si vous êtes sur la métropole lilloise
+                ou accessible facilement en transports depuis celle-ci)&nbsp;!
               </p>
             </div>
           </div>

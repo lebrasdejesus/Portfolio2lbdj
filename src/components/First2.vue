@@ -1,12 +1,32 @@
-<template>
-  <div data-scroll-container class="englobeur-first">
-    <div data-scroll-section class="text-photo">
-      <div
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+const scroll = ref(0);
+const handleScroll = () => {
+  scroll.value = window.scrollY;
+  console.log("handle scroll", scroll.value);
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+</script>
+  
+  <template>
+  <div class="englobeur-first">
+    <!-- <div data-scroll-section class="text-photo"> -->
+    <div class="text-photo" :style="{ transform: `translateY(-${scroll}px)` }">
+      <!-- <div
         class="text"
         data-scroll
         data-scroll-repeat="true"
         data-scroll-speed="2"
-      >
+      >       -->
+      <div class="text">
         <Transition appear name="slide-fade1">
           <div class="bienvenue">BIENVENUE</div>
         </Transition>

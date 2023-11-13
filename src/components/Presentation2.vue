@@ -105,10 +105,10 @@ const cvURL =
             >
               <h4>Mon futur</h4>
               <p>
-                Malgré ma récente immersion dans ce nouvel univers, j’ai à cœur
-                de progresser et d’apprendre tous les jours un peu plus. J’ai
-                d'ailleurs décidé de continuer mon apprentissage en alternance
-                avec la
+                Bien que mon immersion dans ce nouvel univers soit récente, j’ai
+                à cœur de progresser et d’apprendre tous les jours un peu plus.
+                J’ai d'ailleurs décidé de continuer mon apprentissage en
+                alternance avec la
                 <b>3W Academy</b>, au rythme de 3 semaines en entreprise et une
                 semaine en cours. <br /><br />
                 Je suis toujours très attirée par le domaine du graphisme et je
